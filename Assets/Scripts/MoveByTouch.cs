@@ -15,6 +15,8 @@ public class MoveByTouch : MonoBehaviour
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
             touchPosition.z = 0f;
             transform.position = touchPosition;
+            
+            //agregando comentario para ver si aparese en github
         }
     }
 }
