@@ -11,7 +11,7 @@ public class TiempoTareas : MonoBehaviour
     public float[] TimeposActualesObjetivos; 
     public Text[] textoObjetivos;
     public BarraProgreso[] objetivobarra;
-    public bool start;
+    public bool startPlay;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +27,6 @@ public class TiempoTareas : MonoBehaviour
         objetivobarra[2].setInitialDuration(TiemposInicialesObjetivos[2]);
         objetivobarra[3].setInitialDuration(TiemposInicialesObjetivos[3]);
         objetivobarra[4].setInitialDuration(TiemposInicialesObjetivos[4]);
-
-        start = false;
     }
 
     private void Tiempo1()
@@ -66,9 +64,12 @@ public class TiempoTareas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(start == true)
+        if(startPlay == true)
         {
             StartPlay();
+        }
+        else{
+
         }
     }
     public void StartPlay()
