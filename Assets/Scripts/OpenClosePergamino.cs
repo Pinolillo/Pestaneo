@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class OpenClosePergamino : MonoBehaviour
 {
-    public GameObject[] objetivos; //Es necesario definir los objetivos de la fase
+    public GameObject objetivos; //Es necesario definir los objetivos de la fase
     public bool pergaminoOpen;
 
     public GameObject pergaminoFondo;
+    public GameObject objetivosTiempos;
 
     public bool _YaSePresionoBoton = false;
 
@@ -54,21 +55,15 @@ public class OpenClosePergamino : MonoBehaviour
     {
         pergaminoFondo.transform.localScale = Vector3.Scale(transform.localScale, new Vector3(0.3f, 1, 1));
         transform.position = new Vector3(-4.8f, 0, 0);
-        foreach (GameObject objetivo in objetivos)
-        {
-            //Escondemos los objetivos de la fase
-            objetivo.SetActive(false);
-        }
+        objetivosTiempos.transform.position = new Vector3(0, 1, 0);
+        objetivos.SetActive(false);
     }
 
     private void PergaminoOpen()
     {
         pergaminoFondo.transform.localScale = Vector3.Scale(transform.localScale, new Vector3(1, 1, 1));
         transform.position = new Vector3(4.8f, 0, 0);
-        foreach (GameObject objetivo in objetivos)
-        {
-            //Escondemos los objetivos de la fase
-            objetivo.SetActive(true);
-        }
+        objetivosTiempos.transform.position = new Vector3(0, 0.5f, 0);
+        objetivos.SetActive(true);
     }
 }

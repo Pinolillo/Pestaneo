@@ -7,6 +7,8 @@ public class tutorial1 : MonoBehaviour
 {
     public GameObject popup1; //Primer popup
     public GameObject popup2; //Segundo popup
+    public GameObject popup3; //Tercer pop up
+
     public Button okButton; //Obtener el boton el cual se presiona para avanzar
 
     public float showPopUP = 5f;//Se esperan x Segundos para que el pop up 1 se prenda
@@ -22,6 +24,7 @@ public class tutorial1 : MonoBehaviour
 
         popup1.SetActive(false);
         popup2.SetActive(false);
+        popup3.SetActive(false);
 
         StartCoroutine(LlamarPrimerPopup());
         StartCoroutine(LlamarAlBoton());
@@ -42,7 +45,7 @@ public class tutorial1 : MonoBehaviour
             popup2.SetActive(false);
             okButton.gameObject.SetActive(false);//Deshablitar el boton por completo, bye
             _YaSePresionoBoton = false;
-
+            popup3.SetActive(true);
         }
         else
         {
