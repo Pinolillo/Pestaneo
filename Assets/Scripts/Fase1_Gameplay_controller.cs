@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Fase1_Gameplay_controller : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class Fase1_Gameplay_controller : MonoBehaviour
     public ProgresoController progresoController;
     public GameObject progresoControllerObject;
 
+    public GameObject[] checkmarks;
+    public GameObject[] tiempos;
+
     private bool listo1;
     private bool listo2;
 
@@ -23,9 +27,11 @@ public class Fase1_Gameplay_controller : MonoBehaviour
         //Controlamos script de progreso
         progresoController = progresoControllerObject.GetComponent<ProgresoController>();
 
-
         listo1 = false;
         listo2 = false;
+
+        checkmarks[0].SetActive(false);
+        checkmarks[1].SetActive(false);
     }
     void Update()
     {
@@ -34,6 +40,8 @@ public class Fase1_Gameplay_controller : MonoBehaviour
         Trabajo2();
         if (listo1 == true && listo2 == true)
         {
+            //Si gano el jugador if a Escena de victoria
+            SceneManager.LoadScene(4);
             Debug.Log("Gane");
         }
     }
@@ -50,7 +58,10 @@ public class Fase1_Gameplay_controller : MonoBehaviour
         {
             progresoController.currentProgreso[0] = progresoController.currentProgreso[0] + 0 * Time.deltaTime;
             progresoController.barController[0].current = progresoController.barController[0].current + 0 * Time.deltaTime;
+
             listo1 = true;
+            checkmarks[0].SetActive(true);
+            tiempos[0].SetActive(false);
         }
         if (merlinController.inRoom1 == false)
         {
@@ -74,6 +85,8 @@ public class Fase1_Gameplay_controller : MonoBehaviour
             progresoController.barController[1].current = progresoController.barController[1].current + 0 * Time.deltaTime;
 
             listo2 = true;
+            checkmarks[1].SetActive(true);
+            tiempos[1].SetActive(false);
         }
         if (merlinController.inRoom2 == false)
         {

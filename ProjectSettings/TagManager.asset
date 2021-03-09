@@ -11,6 +11,12 @@ TagManager:
   - cuarto3
   - cuarto4
   - cuarto5
+  - congelamiento
+  - slot1
+  - slot2
+  - slot3
+  - slot4
+  - slot5
   layers:
   - Default
   - TransparentFX

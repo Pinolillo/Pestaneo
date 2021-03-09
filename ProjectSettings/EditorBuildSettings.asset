@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase1_Gaemplay.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/victoria_fase1.unity
+    guid: f2aa399e16189408b853d50cdc4294cf
+  - enabled: 1
+    path: Assets/Scenes/Fase1_Cinematic.unity
+    guid: be9df63c1d0094bc3bff133dacb82c37
+  - enabled: 1
+    path: Assets/Scenes/Fase2_Gameplay.unity
+    guid: cf54f84a381a94013a2b40ae4bfd879b
   m_configObjects: {}
