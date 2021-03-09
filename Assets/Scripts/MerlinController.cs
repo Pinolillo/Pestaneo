@@ -25,8 +25,10 @@ public class MerlinController : MonoBehaviour
     void Start()
     {
         selected = false;
+
         cuarto1.GetComponent<BoxCollider>().enabled = false;
-        progreso = 1;
+
+        progreso = 1f;
 
         inRoom1 = false;
         inRoom2 = false;

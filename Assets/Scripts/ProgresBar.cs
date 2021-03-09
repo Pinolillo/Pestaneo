@@ -6,9 +6,9 @@ using UnityEngine.UI;
 [ExecuteInEditMode()]
 public class ProgresBar : MonoBehaviour
 {
-    public int maximum;
-    public int minimum;
-    public int current;
+    public float maximum;
+    public float minimum;
+    public float current;
 
     public Image mask;
     public Image fill;
