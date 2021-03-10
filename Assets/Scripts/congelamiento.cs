@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class congelamiento : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class congelamiento : MonoBehaviour
 
     public bool activated;
 
+    public bool congelarCuarto1;
+    public bool congelarCuarto2;
+    public bool congelarCuarto3;
+    public bool congelarCuarto4;
+    public bool congelarCuarto5;
+
     private void Start()
     {
         congelamientoPower = 20f;
@@ -22,7 +29,8 @@ public class congelamiento : MonoBehaviour
 
     void Update()
     {
-        if(activated == false)
+
+        if (activated == false)
         {
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
@@ -50,6 +58,7 @@ public class congelamiento : MonoBehaviour
                         bola.transform.position = slots[0].transform.position;
                         selected = false;
                         StartCoroutine(CongelamientoActive());
+                        congelarCuarto1 = true;
                     }
                 }
                 else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot2")
@@ -60,6 +69,7 @@ public class congelamiento : MonoBehaviour
                         bola.transform.position = slots[1].transform.position;
                         selected = false;
                         StartCoroutine(CongelamientoActive());
+                        congelarCuarto2 = true;
                     }
                 }
                 else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot3")
@@ -70,6 +80,7 @@ public class congelamiento : MonoBehaviour
                         bola.transform.position = slots[2].transform.position;
                         selected = false;
                         StartCoroutine(CongelamientoActive());
+                        congelarCuarto3 = true;
                     }
                 }
                 else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot4")
@@ -80,6 +91,7 @@ public class congelamiento : MonoBehaviour
                         bola.transform.position = slots[3].transform.position;
                         selected = false;
                         StartCoroutine(CongelamientoActive());
+                        congelarCuarto4 = true;
                     }
                 }
                 else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot5")
@@ -90,6 +102,7 @@ public class congelamiento : MonoBehaviour
                         bola.transform.position = slots[4].transform.position;
                         selected = false;
                         StartCoroutine(CongelamientoActive());
+                        congelarCuarto5 = true;
                     }
                 }
             }
@@ -103,5 +116,10 @@ public class congelamiento : MonoBehaviour
         yield return new WaitForSeconds(congelamientoPower);
         bola.transform.position = suSlot.transform.position;
         activated = false;
+        congelarCuarto1 = false;
+        congelarCuarto2 = false;
+        congelarCuarto3 = false;
+        congelarCuarto4 = false;
+        congelarCuarto5 = false;
     }
 }

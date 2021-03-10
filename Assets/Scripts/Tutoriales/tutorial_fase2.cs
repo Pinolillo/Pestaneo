@@ -18,6 +18,13 @@ public class tutorial_fase2 : MonoBehaviour
     public GameObject bola;
     public GameObject suSlot;
 
+    public TiempoTareas tiempoTareas;
+    public GameObject TareasController;
+
+    public Image boost;
+    public Color32 inactivoboost;
+    public Color32 activoboost;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +40,8 @@ public class tutorial_fase2 : MonoBehaviour
         comenzartutorial = false;
 
         PanelHabiliddes.SetActive(true);
+
+        boost.color = inactivoboost;
     }
 
     // Update is called once per frame
@@ -71,11 +80,32 @@ public class tutorial_fase2 : MonoBehaviour
             PanelHabiliddes.SetActive(true);
             StartCoroutine(showPopup2());
         }
-        if (statusTutorial == 2)
+        else if (statusTutorial == 2)
         {
             popups[2].SetActive(false);
             popups[3].SetActive(true);
             StartCoroutine(botonAbilitar());
+            statusTutorial = 3;
+        }
+        else if(statusTutorial == 3)
+        {
+            popups[3].SetActive(false);
+            popups[4].SetActive(true);
+            StartCoroutine(botonAbilitar());
+            statusTutorial = 4;
+        }
+        else if(statusTutorial == 4)
+        {
+            popups[4].SetActive(false);
+            popups[5].SetActive(true);
+            StartCoroutine(botonAbilitar());
+            boost.color = activoboost;
+            statusTutorial = 5;
+        }
+        else if(statusTutorial == 5)
+        {
+            popups[5].SetActive(false);
+            this.gameObject.SetActive(false);//Eliminamos el boton
         }
     }
 
@@ -95,11 +125,17 @@ public class tutorial_fase2 : MonoBehaviour
     {
         if (bola.transform.position == slot2.transform.position)
         {
+            //Comienza el demo de congelamiento
+            tiempoTareas.GetComponent<TiempoTareas>().startPlay = true;
+            tiempoTareas.startPlay = true;
+
             popups[1].SetActive(false);
             popups[2].SetActive(true);
             statusTutorial = 2;
             yield return new WaitForSeconds(20f);
             okButton.interactable = true;//El boton ahora es interactuable
+
+            tiempoTareas.startPlay = false;
         }
     }
 }

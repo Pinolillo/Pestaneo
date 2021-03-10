@@ -6,6 +6,11 @@ using UnityEngine.UI;
 public class BarraProgreso : MonoBehaviour
 {
     public Slider slider;
+    public Image fill;
+
+    private void Update()
+    {
+    }
 
     public void setInitialDuration(float duration)
     {
