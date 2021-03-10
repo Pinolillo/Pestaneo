@@ -21,16 +21,28 @@ public class congelamiento : MonoBehaviour
     public bool congelarCuarto4;
     public bool congelarCuarto5;
 
+    //Obtener la barra de congelamiento
+    public BarraProgreso congelarbarra;
+
+    public float maxpower;
+
     private void Start()
     {
+        maxpower = 20f;
+
         congelamientoPower = 20f;
         activated = false;
+        congelarbarra.setInitialDuration(maxpower);
     }
 
     void Update()
     {
-
-        if (activated == false)
+        if(activated == true)
+        {
+            maxpower = maxpower + 1 * Time.deltaTime;
+            congelarbarra.setDuration(maxpower);
+        }
+        else
         {
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
@@ -112,6 +124,8 @@ public class congelamiento : MonoBehaviour
     //Segunda Parte Tutorial
     IEnumerator CongelamientoActive()
     {
+        maxpower = 0f;
+        congelarbarra.setDuration(maxpower);
         activated = true;
         yield return new WaitForSeconds(congelamientoPower);
         bola.transform.position = suSlot.transform.position;

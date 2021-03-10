@@ -29,8 +29,8 @@ public class TiempoTareas : MonoBehaviour
         TimeposActualesObjetivos[3] = TiemposInicialesObjetivos[3];
         TimeposActualesObjetivos[4] = TiemposInicialesObjetivos[4];
 
-        objetivobarra[0].setInitialDuration(TiemposInicialesObjetivos[1]);
-        objetivobarra[1].setInitialDuration(TiemposInicialesObjetivos[2]);
+        objetivobarra[0].setInitialDuration(TiemposInicialesObjetivos[0]);
+        objetivobarra[1].setInitialDuration(TiemposInicialesObjetivos[1]);
         objetivobarra[2].setInitialDuration(TiemposInicialesObjetivos[2]);
         objetivobarra[3].setInitialDuration(TiemposInicialesObjetivos[3]);
         objetivobarra[4].setInitialDuration(TiemposInicialesObjetivos[4]);

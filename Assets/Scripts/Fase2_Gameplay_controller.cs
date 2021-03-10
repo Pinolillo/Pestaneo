@@ -33,6 +33,13 @@ public class Fase2_Gameplay_controller : MonoBehaviour
     public Color32 barraCongelada;
 
     public bool perdiste;
+    public bool desarrollo;
+
+    //Obtener la barra de congelamiento
+    public BarraProgreso barradesarrollo;
+
+    public float boostTime;
+    public bool isboostavailable;
 
     void Start()
     {
@@ -52,6 +59,15 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         checkmarks[0].SetActive(false);
         checkmarks[1].SetActive(false);
         checkmarks[2].SetActive(false);
+
+        boostTime = 0f;
+        desarrollo = false;
+
+        barradesarrollo.setInitialDuration(0f);
+        barradesarrollo.slider.maxValue = 10f;
+
+        isboostavailable = true;
+
     }
     void Update()
     {
@@ -66,6 +82,13 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             //Si gano el jugador if a Escena de victoria
             SceneManager.LoadScene(7);
             Debug.Log("Gane");
+        }
+
+        //Checar el boost de desarollo
+        if (desarrollo == true)
+        {
+            boostTime = boostTime - 1f * Time.deltaTime;
+            barradesarrollo.setDuration(boostTime);
         }
     }
 
@@ -199,6 +222,11 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             listo3 = true;
             checkmarks[2].SetActive(true);
             tiempos[2].SetActive(false);
+
+            if(isboostavailable == true)
+            {
+                StartCoroutine(desarrolloPersonal());
+            }
         }
         else if (progresoController.currentProgreso[2] <= 0)
         {
@@ -212,6 +240,21 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             progresoController.barController[2].current = progresoController.barController[2].current + 0 * Time.deltaTime;
 
         }
+    }
+
+    //Segunda Parte Tutorial
+    IEnumerator desarrolloPersonal()
+    {
+        isboostavailable = false;
+        desarrollo = true;
+        boostTime = 10f;
+
+        merlinController.progreso = 2f;
+
+        yield return new WaitForSeconds(10f);//10 Segundos dura la producividad
+
+        desarrollo = false;
+        merlinController.progreso = 1f;
     }
 
 }
