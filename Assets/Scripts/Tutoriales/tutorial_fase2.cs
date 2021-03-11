@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class tutorial_fase2 : MonoBehaviour
 {
@@ -58,9 +59,9 @@ public class tutorial_fase2 : MonoBehaviour
                     popups[0].SetActive(true);
                     comenzartutorial = true;
                 }
-
             }
-        }//Bien hasta aquí
+        }
+        //Bien hasta aquí
         if(statusTutorial == 1)
         {
             StartCoroutine(showPopup3());
@@ -104,6 +105,7 @@ public class tutorial_fase2 : MonoBehaviour
             popups[5].SetActive(false);
             this.gameObject.SetActive(false);//Eliminamos el boton
             barradeboost.setDuration(0f);
+            SceneManager.LoadScene(7);
         }
     }
 

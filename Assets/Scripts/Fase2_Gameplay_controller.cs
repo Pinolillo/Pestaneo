@@ -33,6 +33,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
     public Color32 barraCongelada;
 
     public bool perdiste;
+
     public bool desarrollo;
 
     //Obtener la barra de congelamiento
@@ -63,6 +64,8 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         boostTime = 0f;
         desarrollo = false;
 
+        perdiste = false;
+
         barradesarrollo.setInitialDuration(0f);
         barradesarrollo.slider.maxValue = 10f;
 
@@ -80,8 +83,8 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         if (listo1 == true && listo2 == true && listo3 == true)
         {
             //Si gano el jugador if a Escena de victoria
-            SceneManager.LoadScene(7);
             Debug.Log("Gane");
+            SceneManager.LoadScene(8);
         }
 
         //Checar el boost de desarollo
@@ -89,6 +92,11 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         {
             boostTime = boostTime - 1f * Time.deltaTime;
             barradesarrollo.setDuration(boostTime);
+        }
+        //Checar cuando haya perdido el juego
+        if (tiempoTareasController.perder == true)
+        {
+            SceneManager.LoadScene(10);
         }
     }
 
@@ -118,7 +126,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             progresoController.barController[0].current = progresoController.barController[0].current + merlinController.progreso * Time.deltaTime;
         }
         //Condicion si llega a segir en el slot 1 y el tiempo ya se cumplio 
-        else if (progresoController.currentProgreso[0] >= 20)
+        if (progresoController.currentProgreso[0] >= 20)
         {
             progresoController.currentProgreso[0] = progresoController.currentProgreso[0] + 0 * Time.deltaTime;
             progresoController.barController[0].current = progresoController.barController[0].current + 0 * Time.deltaTime;
@@ -126,13 +134,6 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             listo1 = true;
             checkmarks[0].SetActive(true);
             tiempos[0].SetActive(false);
-        }
-        else if(progresoController.currentProgreso[0] <= 0)
-        {
-            progresoController.currentProgreso[0] = progresoController.currentProgreso[0] + 0 * Time.deltaTime;
-            progresoController.barController[0].current = progresoController.barController[0].current + 0 * Time.deltaTime;
-            perdiste = true;
-
         }
         //Condicion cunado no se encuentre en este cuarto progresando 
         if (merlinController.inRoom1 == false)
@@ -166,7 +167,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             progresoController.currentProgreso[1] = progresoController.currentProgreso[1] + merlinController.progreso * Time.deltaTime;
             progresoController.barController[1].current = progresoController.barController[1].current + merlinController.progreso * Time.deltaTime;
         }
-        else if (progresoController.currentProgreso[1] >= 20)
+        if (progresoController.currentProgreso[1] >= 20)
         {
             progresoController.currentProgreso[1] = progresoController.currentProgreso[1] + 0 * Time.deltaTime;
             progresoController.barController[1].current = progresoController.barController[1].current + 0 * Time.deltaTime;
@@ -174,12 +175,6 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             listo2 = true;
             checkmarks[1].SetActive(true);
             tiempos[1].SetActive(false);
-        }
-        else if (progresoController.currentProgreso[1] <= 0)
-        {
-            progresoController.currentProgreso[0] = progresoController.currentProgreso[0] + 0 * Time.deltaTime;
-            progresoController.barController[0].current = progresoController.barController[0].current + 0 * Time.deltaTime;
-            perdiste = true;
         }
         if (merlinController.inRoom2 == false)
         {
@@ -193,7 +188,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
     //Si merliin congela el cuarto 4 debe parar el tiempo y cambiar el color de la barra del objtivo 3
     private void Trabajo3()
     {
-        if (congelamientController.congelarCuarto4 == true)
+        if (congelamientController.congelarCuarto3 == true)
         {
             //parar el trabajo aquí y cambiar el color aquí
             Debug.Log("congelar objetivo 3");
@@ -208,13 +203,13 @@ public class Fase2_Gameplay_controller : MonoBehaviour
 
         progresoController.numProgreso[2].text = progresoController.currentProgreso[2].ToString("0");
 
-        if (merlinController.inRoom4 == true && progresoController.currentProgreso[2] <= 20)
+        if (merlinController.inRoom3 == true && progresoController.currentProgreso[2] <= 20)
         {
             progresoController.currentProgreso[2] = progresoController.currentProgreso[2] + merlinController.progreso * Time.deltaTime;
             progresoController.barController[2].current = progresoController.barController[2].current + merlinController.progreso * Time.deltaTime;
 
         }
-        else if (progresoController.currentProgreso[2] >= 20)
+        if (progresoController.currentProgreso[2] >= 20)
         {
             progresoController.currentProgreso[2] = progresoController.currentProgreso[2] + 0 * Time.deltaTime;
             progresoController.barController[2].current = progresoController.barController[2].current + 0 * Time.deltaTime;
@@ -228,13 +223,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
                 StartCoroutine(desarrolloPersonal());
             }
         }
-        else if (progresoController.currentProgreso[2] <= 0)
-        {
-            progresoController.currentProgreso[0] = progresoController.currentProgreso[0] + 0 * Time.deltaTime;
-            progresoController.barController[0].current = progresoController.barController[0].current + 0 * Time.deltaTime;
-            perdiste = true;
-        }
-        if (merlinController.inRoom4 == false)
+        if (merlinController.inRoom3 == false)
         {
             progresoController.currentProgreso[2] = progresoController.currentProgreso[2] + 0 * Time.deltaTime;
             progresoController.barController[2].current = progresoController.barController[2].current + 0 * Time.deltaTime;

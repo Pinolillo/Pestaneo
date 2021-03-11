@@ -26,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase2_Gameplay.unity
     guid: cf54f84a381a94013a2b40ae4bfd879b
+  - enabled: 1
+    path: Assets/Scenes/Fase2_Gameplay_Reto.unity
+    guid: 9c75cc1bae1734ab5951ffc2fcc8cdae
+  - enabled: 1
+    path: Assets/Scenes/victoria_fase2.unity
+    guid: b872abe4e4ddf40709068a5e5f0a4ce5
+  - enabled: 1
+    path: Assets/Scenes/Fase2_Cinematic.unity
+    guid: 7b8b76821a3fb4faa811291c01b637b8
+  - enabled: 1
+    path: Assets/Scenes/Perdiste_fase2.unity
+    guid: 728e5a0cf3fe84b17b7ccb30a61917ab
   m_configObjects: {}

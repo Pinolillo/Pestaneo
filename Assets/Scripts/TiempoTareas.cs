@@ -20,6 +20,8 @@ public class TiempoTareas : MonoBehaviour
     public bool congelandoObjetivo4;
     public bool congelandoObjetivo5;
 
+    public bool perder;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,8 @@ public class TiempoTareas : MonoBehaviour
         congelandoObjetivo3 = false;
         congelandoObjetivo4 = false;
         congelandoObjetivo5 = false;
+
+        perder = false;
     }
 
     public void Tiempo1()
@@ -49,6 +53,10 @@ public class TiempoTareas : MonoBehaviour
             textoObjetivos[0].text = TimeposActualesObjetivos[0].ToString("0");
             TimeposActualesObjetivos[0] -= 1 * Time.deltaTime;
             objetivobarra[0].setDuration(TimeposActualesObjetivos[0]);
+        }
+        if(TimeposActualesObjetivos[0] <= 0)
+        {
+            perder = true;
         }
     }
 
@@ -60,6 +68,10 @@ public class TiempoTareas : MonoBehaviour
             TimeposActualesObjetivos[1] -= 1 * Time.deltaTime;
             objetivobarra[1].setDuration(TimeposActualesObjetivos[1]);
         }
+        if (TimeposActualesObjetivos[1] <= 0)
+        {
+            perder = true;
+        }
     }
     public void Tiempo3()
     {
@@ -68,6 +80,10 @@ public class TiempoTareas : MonoBehaviour
             textoObjetivos[2].text = TimeposActualesObjetivos[2].ToString("0");
             TimeposActualesObjetivos[2] -= 1 * Time.deltaTime;
             objetivobarra[2].setDuration(TimeposActualesObjetivos[2]);
+        }
+        if (TimeposActualesObjetivos[2] <= 0)
+        {
+            perder = true;
         }
     }
     public void Tiempo4()
@@ -78,6 +94,10 @@ public class TiempoTareas : MonoBehaviour
             TimeposActualesObjetivos[3] -= 1 * Time.deltaTime;
             objetivobarra[3].setDuration(TimeposActualesObjetivos[3]);
         }
+        if (TimeposActualesObjetivos[3] <= 0)
+        {
+            perder = true;
+        }
     }
     public void Tiempo5()
     {
@@ -86,6 +106,10 @@ public class TiempoTareas : MonoBehaviour
             textoObjetivos[4].text = TimeposActualesObjetivos[4].ToString("0");
             TimeposActualesObjetivos[4] -= 1 * Time.deltaTime;
             objetivobarra[4].setDuration(TimeposActualesObjetivos[4]);
+        }
+        if (TimeposActualesObjetivos[4] <= 0)
+        {
+            perder = true;
         }
     }
 
