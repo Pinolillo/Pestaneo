@@ -132,6 +132,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             progresoController.barController[0].current = progresoController.barController[0].current + 0 * Time.deltaTime;
 
             listo1 = true;
+            tiempoTareasController.listo1 = true;
             checkmarks[0].SetActive(true);
             tiempos[0].SetActive(false);
         }
@@ -173,6 +174,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             progresoController.barController[1].current = progresoController.barController[1].current + 0 * Time.deltaTime;
 
             listo2 = true;
+            tiempoTareasController.listo2 = true;
             checkmarks[1].SetActive(true);
             tiempos[1].SetActive(false);
         }
@@ -215,6 +217,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             progresoController.barController[2].current = progresoController.barController[2].current + 0 * Time.deltaTime;
 
             listo3 = true;
+            tiempoTareasController.listo3 = true;
             checkmarks[2].SetActive(true);
             tiempos[2].SetActive(false);
 

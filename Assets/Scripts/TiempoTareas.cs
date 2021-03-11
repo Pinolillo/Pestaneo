@@ -21,6 +21,11 @@ public class TiempoTareas : MonoBehaviour
     public bool congelandoObjetivo5;
 
     public bool perder;
+    public bool listo1;
+    public bool listo2;
+    public bool listo3;
+    public bool listo4;
+    public bool listo5;
 
     // Start is called before the first frame update
     void Start()
@@ -44,72 +49,92 @@ public class TiempoTareas : MonoBehaviour
         congelandoObjetivo5 = false;
 
         perder = false;
+        listo1 = false;
+        listo2 = false;
+        listo3 = false;
+        listo4 = false;
+        listo5 = false;
     }
 
     public void Tiempo1()
     {
-        if(congelandoObjetivo1 == false)
+        if(listo1 == false)
         {
-            textoObjetivos[0].text = TimeposActualesObjetivos[0].ToString("0");
-            TimeposActualesObjetivos[0] -= 1 * Time.deltaTime;
-            objetivobarra[0].setDuration(TimeposActualesObjetivos[0]);
-        }
-        if(TimeposActualesObjetivos[0] <= 0)
-        {
-            perder = true;
+            if (congelandoObjetivo1 == false)
+            {
+                textoObjetivos[0].text = TimeposActualesObjetivos[0].ToString("0");
+                TimeposActualesObjetivos[0] -= 1 * Time.deltaTime;
+                objetivobarra[0].setDuration(TimeposActualesObjetivos[0]);
+                if (TimeposActualesObjetivos[0] <= 0)
+                {
+                    perder = true;
+                }
+            }
         }
     }
 
     public void Tiempo2()
     {
-        if (congelandoObjetivo2 == false)
+        if(listo2 == false)
         {
-            textoObjetivos[1].text = TimeposActualesObjetivos[1].ToString("0");
-            TimeposActualesObjetivos[1] -= 1 * Time.deltaTime;
-            objetivobarra[1].setDuration(TimeposActualesObjetivos[1]);
-        }
-        if (TimeposActualesObjetivos[1] <= 0)
-        {
-            perder = true;
+            if (congelandoObjetivo2 == false)
+            {
+                textoObjetivos[1].text = TimeposActualesObjetivos[1].ToString("0");
+                TimeposActualesObjetivos[1] -= 1 * Time.deltaTime;
+                objetivobarra[1].setDuration(TimeposActualesObjetivos[1]);
+                if (TimeposActualesObjetivos[1] <= 0)
+                {
+                    perder = true;
+                }
+            }
         }
     }
     public void Tiempo3()
     {
-        if(congelandoObjetivo3 == false)
+        if(listo3 == false)
         {
-            textoObjetivos[2].text = TimeposActualesObjetivos[2].ToString("0");
-            TimeposActualesObjetivos[2] -= 1 * Time.deltaTime;
-            objetivobarra[2].setDuration(TimeposActualesObjetivos[2]);
-        }
-        if (TimeposActualesObjetivos[2] <= 0)
-        {
-            perder = true;
+            if (congelandoObjetivo3 == false)
+            {
+                textoObjetivos[2].text = TimeposActualesObjetivos[2].ToString("0");
+                TimeposActualesObjetivos[2] -= 1 * Time.deltaTime;
+                objetivobarra[2].setDuration(TimeposActualesObjetivos[2]);
+                if (TimeposActualesObjetivos[2] <= 0)
+                {
+                    perder = true;
+                }
+            }
         }
     }
     public void Tiempo4()
     {
-        if (congelandoObjetivo4 == false)
+        if(listo4 == false)
         {
-            textoObjetivos[3].text = TimeposActualesObjetivos[3].ToString("0");
-            TimeposActualesObjetivos[3] -= 1 * Time.deltaTime;
-            objetivobarra[3].setDuration(TimeposActualesObjetivos[3]);
-        }
-        if (TimeposActualesObjetivos[3] <= 0)
-        {
-            perder = true;
+            if (congelandoObjetivo4 == false)
+            {
+                textoObjetivos[3].text = TimeposActualesObjetivos[3].ToString("0");
+                TimeposActualesObjetivos[3] -= 1 * Time.deltaTime;
+                objetivobarra[3].setDuration(TimeposActualesObjetivos[3]);
+                if (TimeposActualesObjetivos[3] <= 0)
+                {
+                    perder = true;
+                }
+            }
         }
     }
     public void Tiempo5()
     {
-        if(congelandoObjetivo5 == false)
+        if(listo5 == false)
         {
-            textoObjetivos[4].text = TimeposActualesObjetivos[4].ToString("0");
-            TimeposActualesObjetivos[4] -= 1 * Time.deltaTime;
-            objetivobarra[4].setDuration(TimeposActualesObjetivos[4]);
-        }
-        if (TimeposActualesObjetivos[4] <= 0)
-        {
-            perder = true;
+            if (congelandoObjetivo5 == false)
+            {
+                textoObjetivos[4].text = TimeposActualesObjetivos[4].ToString("0");
+                TimeposActualesObjetivos[4] -= 1 * Time.deltaTime;
+                objetivobarra[4].setDuration(TimeposActualesObjetivos[4]);
+                if (TimeposActualesObjetivos[4] <= 0)
+                {
+                    perder = true;
+                }
+            }
         }
     }
 

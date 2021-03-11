@@ -3909,8 +3909,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.29, y: -0.1}
-  m_SizeDelta: {x: 280, y: 100}
+  m_AnchoredPosition: {x: 0.56, y: -0.1}
+  m_SizeDelta: {x: 340, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092992007
 MonoBehaviour:
@@ -3945,9 +3945,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: El hechizo de congelamiento dura 20 segundos haciendo efecto. Da click
-    sobre tu hechizo y luego da click sobre el cuarto con el objetivo 2 y mira que
-    sucede.
+  m_Text: "El hechizo de congelamiento dura 20 segundos haciendo efecto. Da click
+    sobre tu hechizo y luego da click sobre el recuadro azul en la habitaci\xF3n
+    con el objetivo 2 y mira que sucede."
 --- !u!222 &1092992008
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4739,7 +4739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232179230}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 323, y: -148, z: 387.10156}
+  m_LocalPosition: {x: 345, y: -148, z: 387.10156}
   m_LocalScale: {x: 64, y: 64, z: 64}
   m_Children:
   - {fileID: 1397593338}
@@ -5533,7 +5533,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.38, y: -0.1639142}
-  m_SizeDelta: {x: 385, y: 120}
+  m_SizeDelta: {x: 480, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1397593339
 MonoBehaviour:
@@ -6441,6 +6441,12 @@ MonoBehaviour:
   congelandoObjetivo3: 0
   congelandoObjetivo4: 0
   congelandoObjetivo5: 0
+  perder: 0
+  listo1: 0
+  listo2: 0
+  listo3: 0
+  listo4: 0
+  listo5: 0
 --- !u!1 &1663801403
 GameObject:
   m_ObjectHideFlags: 0
