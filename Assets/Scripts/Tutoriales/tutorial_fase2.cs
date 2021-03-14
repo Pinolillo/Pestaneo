@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class tutorial_fase2 : MonoBehaviour
 {
+    public GameObject dedoIndicador;
+
     public GameObject[] popups;
     public Button okButton;
     public GameObject jareta;
@@ -40,6 +42,7 @@ public class tutorial_fase2 : MonoBehaviour
         comenzartutorial = false;
 
         PanelHabiliddes.SetActive(true);
+        dedoIndicador.SetActive(false);
     }
 
     // Update is called once per frame
@@ -61,8 +64,25 @@ public class tutorial_fase2 : MonoBehaviour
                 }
             }
         }
-        //Bien hasta aquí
-        if(statusTutorial == 1)
+
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "congelamiento")
+            {
+                dedoIndicador.transform.position = slot2.transform.position;
+            }
+        }
+
+        if(bola.transform.position == slot2.transform.position)
+        {
+            dedoIndicador.SetActive(false);
+        }
+
+
+        if (statusTutorial == 1)
         {
             StartCoroutine(showPopup3());
         }
@@ -77,6 +97,7 @@ public class tutorial_fase2 : MonoBehaviour
             okButton.interactable = false;
             PanelHabiliddes.SetActive(true);
             StartCoroutine(showPopup2());
+            dedoIndicador.SetActive(true);
         }
         else if (statusTutorial == 2)
         {

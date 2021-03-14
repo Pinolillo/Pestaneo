@@ -21,6 +21,10 @@ public class congelamiento : MonoBehaviour
     public bool congelarCuarto4;
     public bool congelarCuarto5;
 
+    public Color32 normalColor;
+    public Color32 selectedColor;
+    public Image hechizo;
+
     //Obtener la barra de congelamiento
     public BarraProgreso congelarbarra;
 
@@ -37,6 +41,17 @@ public class congelamiento : MonoBehaviour
 
     void Update()
     {
+        //Al dar click sobre el hechizo se cambia su color para dar retroalimentación al usuario
+        if(selected == true)
+        {
+            hechizo.color = selectedColor;
+        }
+        else
+        {
+            hechizo.color = normalColor;
+        }
+
+
         if(activated == true)
         {
             maxpower = maxpower + 1 * Time.deltaTime;

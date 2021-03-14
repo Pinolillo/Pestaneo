@@ -28,9 +28,12 @@ public class Fase2_Gameplay_controller : MonoBehaviour
     public GameObject tiempoTareasGameobject;
 
     public Image[] barrasTiempos;
+    public Image[] progresoBarraTiempos;
 
-    public Color32 barraNormal;
-    public Color32 barraCongelada;
+    public Color32 Green;
+    public Color32 Blue;
+    public Color32 Black;
+    public Color32 White;
 
     public bool perdiste;
 
@@ -42,6 +45,19 @@ public class Fase2_Gameplay_controller : MonoBehaviour
     public float boostTime;
     public bool isboostavailable;
 
+    public Sprite fondoNormal;
+    public Sprite fondoCongelado;
+
+    private RectTransform rt1;
+    private RectTransform rt2;
+    private RectTransform rt3;
+
+    private Image base1;
+    private Image base2;
+    private Image base3;
+
+    public Text[] objetivosTitulos;
+
     void Start()
     {
         //Controlamos script de merlin
@@ -52,6 +68,9 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         congelamientController = congelarObject.GetComponent<congelamiento>();
         //Controlamos el script de tiempos
         tiempoTareasController = tiempoTareasGameobject.GetComponent<TiempoTareas>();
+
+        //El color del titulo 3 es green por ser objetivo de desarrollo
+        objetivosTitulos[2].color = Green;
 
         listo1 = false;
         listo2 = false;
@@ -71,6 +90,14 @@ public class Fase2_Gameplay_controller : MonoBehaviour
 
         isboostavailable = true;
 
+        base1 = barrasTiempos[0].GetComponent<Image>();
+        base2 = barrasTiempos[1].GetComponent<Image>();
+        base3 = barrasTiempos[2].GetComponent<Image>();
+
+        //Rect Transform de las bases para poder cambiar su tamaño cuando se congelan
+        rt1 = (RectTransform)barrasTiempos[0].transform;
+        rt2 = (RectTransform)barrasTiempos[1].transform;
+        rt3 = (RectTransform)barrasTiempos[2].transform;
     }
     void Update()
     {
@@ -109,12 +136,11 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             //parar el trabajo aquí y cambiar el color aquí
             Debug.Log("congelar objetivo 1");
             tiempoTareasController.congelandoObjetivo1 = true;
-            barrasTiempos[0].color = barraCongelada;
+            StartCoroutine(FreezeBase1());
         }
         else
         {
             tiempoTareasController.congelandoObjetivo1 = false;
-            barrasTiempos[0].color = barraNormal;
         }
        
         //Condicion si se encuentra en el slot 1 y puede trabajar
@@ -135,6 +161,8 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             tiempoTareasController.listo1 = true;
             checkmarks[0].SetActive(true);
             tiempos[0].SetActive(false);
+            barrasTiempos[0].color = Green;
+            objetivosTitulos[0].color = White;
         }
         //Condicion cunado no se encuentre en este cuarto progresando 
         if (merlinController.inRoom1 == false)
@@ -153,12 +181,11 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             //parar el trabajo aquí y cambiar el color aquí
             Debug.Log("congelar objetivo 2");
             tiempoTareasController.congelandoObjetivo2 = true;
-            barrasTiempos[1].color = barraCongelada;
+            StartCoroutine(FreezeBase2());
         }
         else
         {
             tiempoTareasController.congelandoObjetivo2 = false;
-            barrasTiempos[1].color = barraNormal;
         }
 
         progresoController.numProgreso[1].text = progresoController.currentProgreso[1].ToString("0");
@@ -177,6 +204,8 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             tiempoTareasController.listo2 = true;
             checkmarks[1].SetActive(true);
             tiempos[1].SetActive(false);
+            barrasTiempos[1].color = Green;
+            objetivosTitulos[1].color = White;
         }
         if (merlinController.inRoom2 == false)
         {
@@ -195,12 +224,11 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             //parar el trabajo aquí y cambiar el color aquí
             Debug.Log("congelar objetivo 3");
             tiempoTareasController.congelandoObjetivo3 = true;
-            barrasTiempos[2].color = barraCongelada;
+            StartCoroutine(FreezeBase3());
         }
         else
         {
             tiempoTareasController.congelandoObjetivo3 = false;
-            barrasTiempos[2].color = barraNormal;
         }
 
         progresoController.numProgreso[2].text = progresoController.currentProgreso[2].ToString("0");
@@ -220,8 +248,10 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             tiempoTareasController.listo3 = true;
             checkmarks[2].SetActive(true);
             tiempos[2].SetActive(false);
+            barrasTiempos[2].color = Green;
+            objetivosTitulos[2].color = White;
 
-            if(isboostavailable == true)
+            if (isboostavailable == true)
             {
                 StartCoroutine(desarrolloPersonal());
             }
@@ -247,6 +277,44 @@ public class Fase2_Gameplay_controller : MonoBehaviour
 
         desarrollo = false;
         merlinController.progreso = 1f;
+    }
+
+    //Al conjelar un objetivo debemos determinar el color de la barra de tareas
+    IEnumerator FreezeBase1()
+    {
+        base1.sprite = fondoCongelado;
+        rt1.sizeDelta = new Vector2(170f, 135f);
+        progresoBarraTiempos[0].color = Blue;
+        objetivosTitulos[0].color = Blue;
+        yield return new WaitForSeconds(20f);//20 Segundos dura congelado
+        base1.sprite = fondoNormal;
+        rt1.sizeDelta = new Vector2(170f, 85f);
+        progresoBarraTiempos[0].color = Green;
+        objetivosTitulos[0].color = Black;
+    }
+    IEnumerator FreezeBase2()
+    {
+        base2.sprite = fondoCongelado;
+        rt2.sizeDelta = new Vector2(170f, 135f);
+        progresoBarraTiempos[1].color = Blue;
+        objetivosTitulos[1].color = Blue;
+        yield return new WaitForSeconds(20f);//20 Segundos dura congelado
+        base2.sprite = fondoNormal;
+        rt2.sizeDelta = new Vector2(170f, 85f);
+        progresoBarraTiempos[1].color = Green;
+        objetivosTitulos[1].color = Black;
+    }
+    IEnumerator FreezeBase3()
+    {
+        base3.sprite = fondoCongelado;
+        rt3.sizeDelta = new Vector2(170f, 135f);
+        progresoBarraTiempos[2].color = Blue;
+        objetivosTitulos[2].color = Blue;
+        yield return new WaitForSeconds(20f);//20 Segundos dura congelado
+        base3.sprite = fondoNormal;
+        rt3.sizeDelta = new Vector2(170f, 85f);
+        progresoBarraTiempos[2].color = Green;
+        objetivosTitulos[2].color = Green;
     }
 
 }

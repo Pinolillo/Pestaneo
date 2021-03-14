@@ -9,6 +9,7 @@ public class OpenClosePergamino : MonoBehaviour
     public bool pergaminoOpen;
 
     public GameObject pergaminoFondo;
+    public GameObject pergaminocerrado;
     public GameObject objetivosTiempos;
 
     public bool _YaSePresionoBoton = false;
@@ -29,6 +30,17 @@ public class OpenClosePergamino : MonoBehaviour
         else
         {
             PergaminoClose();
+        }
+
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "Jareta")
+            {
+                Pergamino();
+            }
         }
 
     }
@@ -53,17 +65,27 @@ public class OpenClosePergamino : MonoBehaviour
 
     private void PergaminoClose()
     {
+        pergaminoFondo.SetActive(false);
+        objetivos.SetActive(false);
+        pergaminocerrado.SetActive(true);
+        objetivosTiempos.transform.position = new Vector3(-8.33f, 0, 0);
+        /*
         pergaminoFondo.transform.localScale = Vector3.Scale(transform.localScale, new Vector3(0.3f, 1, 1));
         transform.position = new Vector3(-4.8f, 0, 0);
         objetivosTiempos.transform.position = new Vector3(0, 1, 0);
-        objetivos.SetActive(false);
+        objetivos.SetActive(false);*/
     }
 
     private void PergaminoOpen()
     {
+        pergaminoFondo.SetActive(true);
+        objetivos.SetActive(true);
+        pergaminocerrado.SetActive(false);
+        objetivosTiempos.transform.position = new Vector3(-15f, 0, 0);
+        /*
         pergaminoFondo.transform.localScale = Vector3.Scale(transform.localScale, new Vector3(1, 1, 1));
         transform.position = new Vector3(4.8f, 0, 0);
         objetivosTiempos.transform.position = new Vector3(0, 0.5f, 0);
-        objetivos.SetActive(true);
+        objetivos.SetActive(true);*/
     }
 }

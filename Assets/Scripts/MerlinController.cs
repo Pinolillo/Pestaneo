@@ -19,6 +19,10 @@ public class MerlinController : MonoBehaviour
     public bool inRoom4;
     public bool inRoom5;
 
+    public SpriteRenderer spriteRenderer;
+    public Sprite glowSprite;
+    public Sprite normalSprite;
+
     public float progreso;
 
     // Start is called before the first frame update
@@ -40,6 +44,15 @@ public class MerlinController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(selected == true)
+        {
+            spriteRenderer.sprite = glowSprite;
+        }
+        else
+        {
+            spriteRenderer.sprite = normalSprite;
+        }
+
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);

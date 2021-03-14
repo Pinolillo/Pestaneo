@@ -12,6 +12,7 @@ public class tutorial3 : MonoBehaviour
     public GameObject popup8;
 
     public GameObject cuarto1;
+    public GameObject cuarto2;
 
     public Button okbuton2;
     public GameObject merlin;
@@ -30,6 +31,14 @@ public class tutorial3 : MonoBehaviour
         popup8.SetActive(false);
 
         tiempoTareas = TareasController.GetComponent<TiempoTareas>();
+    }
+
+    public void Update()
+    {
+        if (merlin.transform.position == cuarto2.transform.position)
+        {
+            popup8.SetActive(false);
+        }
     }
 
     public void Tutorial3()

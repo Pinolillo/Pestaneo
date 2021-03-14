@@ -17,6 +17,8 @@ public class tutorial1 : MonoBehaviour
 
     private bool _YaSePresionoBoton = false;
 
+    public GameObject check1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,7 @@ public class tutorial1 : MonoBehaviour
             okButton.gameObject.SetActive(false);//Deshablitar el boton por completo, bye
             _YaSePresionoBoton = false;
             popup3.SetActive(true);
+            check1.SetActive(false);
         }
         else
         {
@@ -54,6 +57,7 @@ public class tutorial1 : MonoBehaviour
             popup2.SetActive(true); //y aparce el pop up 2
             StartCoroutine(LlamarPorSegundaVezAlBoton());
             _YaSePresionoBoton = true;
+            check1.SetActive(true);
         }
     }
 

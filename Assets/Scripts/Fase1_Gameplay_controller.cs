@@ -16,9 +16,13 @@ public class Fase1_Gameplay_controller : MonoBehaviour
 
     public GameObject[] checkmarks;
     public GameObject[] tiempos;
+    public GameObject[] fondosCheckmarks;
+    public Image[] fondos;
 
     private bool listo1;
     private bool listo2;
+
+    public Color32 listocolor;
 
     void Start()
     {
@@ -62,6 +66,8 @@ public class Fase1_Gameplay_controller : MonoBehaviour
             listo1 = true;
             checkmarks[0].SetActive(true);
             tiempos[0].SetActive(false);
+            fondosCheckmarks[0].SetActive(false);
+            fondos[0].color = listocolor;
         }
         if (merlinController.inRoom1 == false)
         {
@@ -87,6 +93,8 @@ public class Fase1_Gameplay_controller : MonoBehaviour
             listo2 = true;
             checkmarks[1].SetActive(true);
             tiempos[1].SetActive(false);
+            fondosCheckmarks[1].SetActive(false);
+            fondos[1].color = listocolor;
         }
         if (merlinController.inRoom2 == false)
         {
