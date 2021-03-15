@@ -19,7 +19,7 @@ public class Fase1_Gameplay_controller : MonoBehaviour
     public GameObject[] fondosCheckmarks;
     public Image[] fondos;
 
-    private bool listo1;
+    public bool listo1;
     private bool listo2;
 
     public Color32 listocolor;
