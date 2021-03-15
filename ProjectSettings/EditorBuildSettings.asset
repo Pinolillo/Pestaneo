@@ -38,4 +38,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Perdiste_fase2.unity
     guid: 728e5a0cf3fe84b17b7ccb30a61917ab
+  - enabled: 1
+    path: Assets/Scenes/Fase3_Gameplay.unity
+    guid: 6ae961e37f99646369fd99b1c5472194
+  - enabled: 1
+    path: Assets/Scenes/victoria_fase3.unity
+    guid: 9d7370eb3f0d94dd6827369b58265f02
+  - enabled: 1
+    path: Assets/Scenes/Perdiste_fase3.unity
+    guid: ea8812687aadb4bbdb2c8facb6c406f1
+  - enabled: 1
+    path: Assets/Scenes/Fase3_Cinematic.unity
+    guid: 0aae954efd1844a85bd7b74b6bc8bd63
+  - enabled: 1
+    path: Assets/Scenes/Fase4_Gameplay.unity
+    guid: 32c7b4b77458243f0a2d9dbf8bccc16d
+  - enabled: 1
+    path: Assets/Scenes/Perdiste_fase4.unity
+    guid: 706fad9fefd364531b9990b9e13113f9
+  - enabled: 1
+    path: Assets/Scenes/victoria_fase4.unity
+    guid: dd9cce30de6aa4de2b01f7215f069035
+  - enabled: 1
+    path: Assets/Scenes/Fase4_Cinematic.unity
+    guid: 7439f1bd8444b4402aa90ff62ce80fef
   m_configObjects: {}

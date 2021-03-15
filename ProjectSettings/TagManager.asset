@@ -17,6 +17,7 @@ TagManager:
   - slot3
   - slot4
   - slot5
+  - distraction
   layers:
   - Default
   - TransparentFX

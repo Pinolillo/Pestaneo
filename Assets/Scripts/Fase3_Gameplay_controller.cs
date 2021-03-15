@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Fase2_Gameplay_controller : MonoBehaviour
+public class Fase3_Gameplay_controller : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject merlin;
@@ -58,6 +58,10 @@ public class Fase2_Gameplay_controller : MonoBehaviour
 
     public Text[] objetivosTitulos;
 
+    public GameObject distraction;
+
+    public bool puedeDistraerse;
+
     void Start()
     {
         //Controlamos script de merlin
@@ -69,8 +73,8 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         //Controlamos el script de tiempos
         tiempoTareasController = tiempoTareasGameobject.GetComponent<TiempoTareas>();
 
-        //El color del titulo 3 es green por ser objetivo de desarrollo
-        objetivosTitulos[2].color = Green;
+        //El color del titulo 2 es green por ser objetivo de desarrollo
+        objetivosTitulos[1].color = Green;
 
         listo1 = false;
         listo2 = false;
@@ -89,6 +93,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         barradesarrollo.slider.maxValue = 10f;
 
         isboostavailable = true;
+        puedeDistraerse = true;
 
         base1 = barrasTiempos[0].GetComponent<Image>();
         base2 = barrasTiempos[1].GetComponent<Image>();
@@ -98,6 +103,9 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         rt1 = (RectTransform)barrasTiempos[0].transform;
         rt2 = (RectTransform)barrasTiempos[1].transform;
         rt3 = (RectTransform)barrasTiempos[2].transform;
+
+        //objeto de distraccion inicia apagado
+        distraction.SetActive(false);
     }
     void Update()
     {
@@ -111,7 +119,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         {
             //Si gano el jugador if a Escena de victoria
             Debug.Log("Gane");
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(12);
         }
 
         //Checar el boost de desarollo
@@ -123,7 +131,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         //Checar cuando haya perdido el juego
         if (tiempoTareasController.perder == true)
         {
-            SceneManager.LoadScene(10);
+            SceneManager.LoadScene(13);
         }
     }
 
@@ -142,7 +150,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
         {
             tiempoTareasController.congelandoObjetivo1 = false;
         }
-       
+
         //Condicion si se encuentra en el slot 1 y puede trabajar
         progresoController.numProgreso[0].text = progresoController.currentProgreso[0].ToString("0");
 
@@ -176,7 +184,7 @@ public class Fase2_Gameplay_controller : MonoBehaviour
     //Si merliin congela el cuarto 2 debe parar el tiempo y cambiar el color de la barra del objtivo 2
     private void Trabajo2()
     {
-        if (congelamientController.congelarCuarto4 == true)
+        if (congelamientController.congelarCuarto1 == true)
         {
             //parar el trabajo aquí y cambiar el color aquí
             Debug.Log("congelar objetivo 2");
@@ -190,10 +198,19 @@ public class Fase2_Gameplay_controller : MonoBehaviour
 
         progresoController.numProgreso[1].text = progresoController.currentProgreso[1].ToString("0");
 
-        if (merlinController.inRoom4 == true && progresoController.currentProgreso[1] <= 20)
+        if (merlinController.inRoom1 == true && progresoController.currentProgreso[1] <= 20)
         {
             progresoController.currentProgreso[1] = progresoController.currentProgreso[1] + merlinController.progreso * Time.deltaTime;
             progresoController.barController[1].current = progresoController.barController[1].current + merlinController.progreso * Time.deltaTime;
+
+            //Aquí anda merito chambeando
+            //Si anda chambeando y llega a 10 puntos 
+            if (progresoController.currentProgreso[1] >= 10)
+            {
+                //Iniiciar corrutina de distracción
+                StartCoroutine(Distraccion());
+            }
+
         }
         if (progresoController.currentProgreso[1] >= 20)
         {
@@ -206,8 +223,14 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             tiempos[1].SetActive(false);
             barrasTiempos[1].color = Green;
             objetivosTitulos[1].color = White;
+
+            if (isboostavailable == true)
+            {
+                StartCoroutine(desarrolloPersonal());
+            }
+
         }
-        if (merlinController.inRoom4 == false)
+        if (merlinController.inRoom1 == false)
         {
             progresoController.currentProgreso[1] = progresoController.currentProgreso[1] + 0 * Time.deltaTime;
             progresoController.barController[1].current = progresoController.barController[1].current + 0 * Time.deltaTime;
@@ -250,17 +273,11 @@ public class Fase2_Gameplay_controller : MonoBehaviour
             tiempos[2].SetActive(false);
             barrasTiempos[2].color = Green;
             objetivosTitulos[2].color = White;
-
-            if (isboostavailable == true)
-            {
-                StartCoroutine(desarrolloPersonal());
-            }
         }
         if (merlinController.inRoom3 == false)
         {
             progresoController.currentProgreso[2] = progresoController.currentProgreso[2] + 0 * Time.deltaTime;
             progresoController.barController[2].current = progresoController.barController[2].current + 0 * Time.deltaTime;
-
         }
     }
 
@@ -277,6 +294,19 @@ public class Fase2_Gameplay_controller : MonoBehaviour
 
         desarrollo = false;
         merlinController.progreso = 1f;
+    }
+    IEnumerator Distraccion()
+    {
+        if(puedeDistraerse == true)
+        {
+            merlinController.progreso = 0f;
+            distraction.SetActive(true);
+            distraction.transform.position = merlin.transform.position;
+            yield return new WaitForSeconds(5f);//5 Segundos dura la distraccion
+            distraction.SetActive(false);
+            puedeDistraerse = false;
+            merlinController.progreso = 1f;
+        }
     }
 
     //Al conjelar un objetivo debemos determinar el color de la barra de tareas
