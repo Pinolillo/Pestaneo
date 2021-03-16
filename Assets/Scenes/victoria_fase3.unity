@@ -193,11 +193,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "En nuestras actividades no podemos congelar el tiempo como Merl\xEDn,
-    pero s\xED podemos evitar el multitasking, es decir, enfocarnos en una s\xF3lo
-    cosa a la vez hasta concluir. No todo es trabajo sin descanso, el invertir tiempo
-    en nosotros mejora nuestra creatividad, para as\xED ser m\xE1s productivos en
-    nuestras actividades diarias."
+  m_Text: "Lograr concluir nuestras actividades se vuelve mucho m\xE1s largo y complicado
+    cuando tenemos distracciones. Nosotros los universitarios sentimos que trabajamos
+    24/7 y que casi nunca tenemos tiempo para otra cosa. Esta sensaci\xF3n muchas
+    veces es falsa y consecuencia de todas las distracciones que tuvimos a lo largo
+    del d\xEDa, es algo que hacemos tan seguido que no lo notamos."
 --- !u!222 &1122440430
 CanvasRenderer:
   m_ObjectHideFlags: 0

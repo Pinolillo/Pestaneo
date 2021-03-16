@@ -1841,7 +1841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 795305291677982144, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_Text
-      value: 80
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 795305291677982146, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_Name
@@ -1849,11 +1849,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 795305291695967468, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_Value
-      value: 80
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 795305291695967468, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_MaxValue
-      value: 80
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 795305291695967470, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5813,7 +5813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 795305291677982144, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_Text
-      value: 60
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 795305291677982146, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_Name
@@ -5821,11 +5821,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 795305291695967468, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_Value
-      value: 60
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 795305291695967468, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_MaxValue
-      value: 60
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 795305291695967470, guid: 9092f89735b064f9580ebfc385de4006, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -8193,8 +8193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TiemposInicialesObjetivos:
-  - 60
-  - 80
+  - 75
+  - 100
   - 65
   - 35
   - 70

@@ -527,8 +527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 700, y: 200}
+  m_AnchoredPosition: {x: 0, y: 83}
+  m_SizeDelta: {x: 700, y: 120}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1347636524
 MonoBehaviour:
@@ -638,11 +638,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "En nuestras actividades no podemos congelar el tiempo como Merl\xEDn,
-    pero s\xED podemos evitar el multitasking, es decir, enfocarnos en una s\xF3lo
-    cosa a la vez hasta concluir. No todo es trabajo sin descanso, el invertir tiempo
-    en nosotros mejora nuestra creatividad, para as\xED ser m\xE1s productivos en
-    nuestras actividades diarias."
+  m_Text: "Gracias a tener objetivos bien definidos, evitar distracciones y enfocarse
+    en una tarea a la vez. Has llegado hasta este punto de organizaci\xF3n y productividad
+    que parec\xEDa imposible."
 --- !u!222 &1541378087
 CanvasRenderer:
   m_ObjectHideFlags: 0
