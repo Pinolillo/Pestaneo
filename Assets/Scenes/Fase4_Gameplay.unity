@@ -3608,9 +3608,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Limpiar jaula de \u201CGorgeo\u201D y jugar con el, en el patio, antes
+  m_Text: "Limpiar jaula de \u201CGorgeo\u201D y jugar con \xE9l, en el patio, antes
     de las 8, para que duerma en su jaula limpia y se mantenga saludable. Hasta dejarla
-    reluciente.  "
+    reluciente."
 --- !u!222 &846632529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6117,7 +6117,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Estudiar hechizo de atenci\xF3n para examen de encantamientos, en el estudio
-    antes de las 8, para desarrollar mis hailidades. Hasta alcanzar un total control
+    antes de las 8, para desarrollar mis habilidades. Hasta alcanzar un control total
     del hechizo."
 --- !u!222 &1372436483
 CanvasRenderer:
