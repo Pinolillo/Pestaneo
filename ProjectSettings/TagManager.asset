@@ -18,6 +18,12 @@ TagManager:
   - slot4
   - slot5
   - distraction
+  - flag1
+  - flag2
+  - flag3
+  - flag4
+  - flag5
+  - Lechuza
   layers:
   - Default
   - TransparentFX

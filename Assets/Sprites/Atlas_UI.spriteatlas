@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas_UI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 6abd6baf9fa96452fa45b6ffa83d098a, type: 3}
+    totalSpriteSurfaceArea: 395679
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 623311f27264b4c11af26b6a2fca6cfe, type: 3}
+  - {fileID: 21300000, guid: ba51c003345954f729affff338f79728, type: 3}
+  - {fileID: 21300000, guid: aee072e3f96e042a79fe44de05bdf8dc, type: 3}
+  - {fileID: 21300000, guid: 17964b247d6824faf9ac179ad8d93fe9, type: 3}
+  - {fileID: 21300000, guid: 443ef24500bcb4f57805feff5d4f40c8, type: 3}
+  - {fileID: 21300000, guid: 4c55a2f66b67046b3b9a033b7cecc0bc, type: 3}
+  - {fileID: 21300000, guid: 95db4fe7166834dae95dbaa1716b0723, type: 3}
+  - {fileID: 21300000, guid: 22d5c96966d74486ab3b29d1cf4ddfec, type: 3}
+  - {fileID: 21300000, guid: 63a83b5ac2fec412cb2af385b1d01b0a, type: 3}
+  - {fileID: 21300000, guid: 850d7daac07af41ec8fe8bee58784995, type: 3}
+  - {fileID: 21300000, guid: 2760465b8afc04352973904ee42c52c2, type: 3}
+  - {fileID: 21300000, guid: 4116b99b8ed63465395b404de1220eca, type: 3}
+  - {fileID: 21300000, guid: 4265805cb242c4f478792f77b0ace157, type: 3}
+  - {fileID: 21300000, guid: 5a08adfe9600244ef95d034ff9291316, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - cronometro_fondo
+  - panel_hechizo
+  - Siguiente
+  - magoicono
+  - BotonContinuar
+  - PergaminoCerrado
+  - Verde
+  - progreso_fondo
+  - Barra
+  - fill-checked
+  - PergaminoAbierto 1
+  - checkgood
+  - cronometro_radial
+  - fil-congelado
+  m_RenderDataMap: {}
+  m_Tag: Atlas_UI
+  m_IsVariant: 0

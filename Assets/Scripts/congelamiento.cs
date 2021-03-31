@@ -25,18 +25,21 @@ public class congelamiento : MonoBehaviour
     public Color32 selectedColor;
     public Image hechizo;
 
-    //Obtener la barra de congelamiento
-    public BarraProgreso congelarbarra;
+    public GameObject textos;
 
-    public float maxpower;
+    public Text powertext;
+
+    public GameObject habitaciones;
+    public GameObject flags;
 
     private void Start()
     {
-        maxpower = 20f;
-
         congelamientoPower = 20f;
+
         activated = false;
-        congelarbarra.setInitialDuration(maxpower);
+
+        textos.SetActive(false);
+        flags.SetActive(false);
     }
 
     void Update()
@@ -45,19 +48,18 @@ public class congelamiento : MonoBehaviour
         if(selected == true)
         {
             hechizo.color = selectedColor;
+            flags.SetActive(true);
+            habitaciones.SetActive(false);
         }
         else
         {
             hechizo.color = normalColor;
+            flags.SetActive(false);
+            habitaciones.SetActive(true);
         }
 
 
-        if(activated == true)
-        {
-            maxpower = maxpower + 1 * Time.deltaTime;
-            congelarbarra.setDuration(maxpower);
-        }
-        else
+        if(activated == false)
         {
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
@@ -77,7 +79,7 @@ public class congelamiento : MonoBehaviour
                         Debug.Log("El echizo esta activo pero ahora ya no lo estará");
                     }
                 }
-                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot1")
+                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "flag1")
                 {
                     Debug.Log("Estoy tocando cuarto1");
                     if (selected == true)
@@ -88,7 +90,7 @@ public class congelamiento : MonoBehaviour
                         congelarCuarto1 = true;
                     }
                 }
-                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot2")
+                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "flag2")
                 {
                     Debug.Log("Estoy tocando cuarto2");
                     if (selected == true)
@@ -99,7 +101,7 @@ public class congelamiento : MonoBehaviour
                         congelarCuarto2 = true;
                     }
                 }
-                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot3")
+                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "flag3")
                 {
                     Debug.Log("Estoy tocando cuarto3");
                     if (selected == true)
@@ -110,7 +112,7 @@ public class congelamiento : MonoBehaviour
                         congelarCuarto3 = true;
                     }
                 }
-                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot4")
+                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "flag4")
                 {
                     Debug.Log("Estoy tocando cuarto4");
                     if (selected == true)
@@ -121,7 +123,7 @@ public class congelamiento : MonoBehaviour
                         congelarCuarto4 = true;
                     }
                 }
-                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "slot5")
+                else if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "flag5")
                 {
                     Debug.Log("Estoy tocando cuarto5");
                     if (selected == true)
@@ -134,21 +136,39 @@ public class congelamiento : MonoBehaviour
                 }
             }
         }
+
+
+        //Esta activo el poder
+        if (activated == true)
+        {
+            Countdown();
+        }
     }
 
-    //Segunda Parte Tutorial
+    //Congelamiento activo
     IEnumerator CongelamientoActive()
     {
-        maxpower = 0f;
-        congelarbarra.setDuration(maxpower);
         activated = true;
+        textos.SetActive(true);
+
         yield return new WaitForSeconds(congelamientoPower);
+
         bola.transform.position = suSlot.transform.position;
         activated = false;
+        textos.SetActive(false);
+
         congelarCuarto1 = false;
         congelarCuarto2 = false;
         congelarCuarto3 = false;
         congelarCuarto4 = false;
         congelarCuarto5 = false;
+
+        congelamientoPower = 20f;
+    }
+
+    public void Countdown()
+    {
+        powertext.text = congelamientoPower.ToString("0");
+        congelamientoPower -= 1 * Time.deltaTime;
     }
 }

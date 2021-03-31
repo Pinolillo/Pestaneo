@@ -10,7 +10,10 @@ public class TiempoTareas : MonoBehaviour
     public float[] TiemposInicialesObjetivos; //Es necesario definir los tiempos que tendran los objetivos
     public float[] TimeposActualesObjetivos; 
     public Text[] textoObjetivos;
-    public BarraProgreso[] objetivobarra;
+
+    //Controlar script de barras radiales
+    public tiempo_radial_bar[] RadialController;
+    public GameObject[] radialBarObject;
 
     public bool startPlay;
 
@@ -27,6 +30,8 @@ public class TiempoTareas : MonoBehaviour
     public bool listo4;
     public bool listo5;
 
+    public bool estamosCongelando;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,17 +41,19 @@ public class TiempoTareas : MonoBehaviour
         TimeposActualesObjetivos[3] = TiemposInicialesObjetivos[3];
         TimeposActualesObjetivos[4] = TiemposInicialesObjetivos[4];
 
-        objetivobarra[0].setInitialDuration(TiemposInicialesObjetivos[0]);
-        objetivobarra[1].setInitialDuration(TiemposInicialesObjetivos[1]);
-        objetivobarra[2].setInitialDuration(TiemposInicialesObjetivos[2]);
-        objetivobarra[3].setInitialDuration(TiemposInicialesObjetivos[3]);
-        objetivobarra[4].setInitialDuration(TiemposInicialesObjetivos[4]);
+        RadialController[0] = radialBarObject[0].GetComponent<tiempo_radial_bar>();
+        RadialController[1] = radialBarObject[1].GetComponent<tiempo_radial_bar>();
+        RadialController[2] = radialBarObject[2].GetComponent<tiempo_radial_bar>();
+        RadialController[3] = radialBarObject[3].GetComponent<tiempo_radial_bar>();
+        RadialController[4] = radialBarObject[4].GetComponent<tiempo_radial_bar>();
 
         congelandoObjetivo1 = false;
         congelandoObjetivo2 = false;
         congelandoObjetivo3 = false;
         congelandoObjetivo4 = false;
         congelandoObjetivo5 = false;
+
+        estamosCongelando = false;
 
         perder = false;
         listo1 = false;
@@ -58,13 +65,13 @@ public class TiempoTareas : MonoBehaviour
 
     public void Tiempo1()
     {
-        if(listo1 == false)
+        if (listo1 == false)
         {
             if (congelandoObjetivo1 == false)
             {
                 textoObjetivos[0].text = TimeposActualesObjetivos[0].ToString("0");
                 TimeposActualesObjetivos[0] -= 1 * Time.deltaTime;
-                objetivobarra[0].setDuration(TimeposActualesObjetivos[0]);
+                RadialController[0].current = RadialController[0].current - 1 * Time.deltaTime;
                 if (TimeposActualesObjetivos[0] <= 0)
                 {
                     perder = true;
@@ -81,7 +88,7 @@ public class TiempoTareas : MonoBehaviour
             {
                 textoObjetivos[1].text = TimeposActualesObjetivos[1].ToString("0");
                 TimeposActualesObjetivos[1] -= 1 * Time.deltaTime;
-                objetivobarra[1].setDuration(TimeposActualesObjetivos[1]);
+                RadialController[1].current = RadialController[1].current - 1 * Time.deltaTime;
                 if (TimeposActualesObjetivos[1] <= 0)
                 {
                     perder = true;
@@ -97,7 +104,7 @@ public class TiempoTareas : MonoBehaviour
             {
                 textoObjetivos[2].text = TimeposActualesObjetivos[2].ToString("0");
                 TimeposActualesObjetivos[2] -= 1 * Time.deltaTime;
-                objetivobarra[2].setDuration(TimeposActualesObjetivos[2]);
+                RadialController[2].current = RadialController[2].current - 1 * Time.deltaTime;
                 if (TimeposActualesObjetivos[2] <= 0)
                 {
                     perder = true;
@@ -113,7 +120,7 @@ public class TiempoTareas : MonoBehaviour
             {
                 textoObjetivos[3].text = TimeposActualesObjetivos[3].ToString("0");
                 TimeposActualesObjetivos[3] -= 1 * Time.deltaTime;
-                objetivobarra[3].setDuration(TimeposActualesObjetivos[3]);
+                RadialController[3].current = RadialController[3].current - 1 * Time.deltaTime;
                 if (TimeposActualesObjetivos[3] <= 0)
                 {
                     perder = true;
@@ -129,7 +136,7 @@ public class TiempoTareas : MonoBehaviour
             {
                 textoObjetivos[4].text = TimeposActualesObjetivos[4].ToString("0");
                 TimeposActualesObjetivos[4] -= 1 * Time.deltaTime;
-                objetivobarra[4].setDuration(TimeposActualesObjetivos[4]);
+                RadialController[4].current = RadialController[4].current - 1 * Time.deltaTime;
                 if (TimeposActualesObjetivos[4] <= 0)
                 {
                     perder = true;

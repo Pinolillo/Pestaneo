@@ -7,7 +7,7 @@ public class Iniciar_Game : MonoBehaviour
 {
 
     public TiempoTareas tiempoTareas;
-    public GameObject TareasController;
+    public MerlinController merlinController;
 
     public GameObject Jareta;//La del inicio
 
@@ -19,6 +19,7 @@ public class Iniciar_Game : MonoBehaviour
     public GameObject panelInicial;
 
     public bool firstTouch;
+    public bool istutorial;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class Iniciar_Game : MonoBehaviour
         textodecontadorInnicial.text = contadorInical.ToString("0");
         panelInicial.SetActive(false);
         firstTouch = false;
+        istutorial = true;
     }
 
     // Update is called once per frame
@@ -64,7 +66,9 @@ public class Iniciar_Game : MonoBehaviour
         yield return new WaitForSeconds(5f);
         firstTouch = true;
         tiempoTareas.GetComponent<TiempoTareas>().startPlay = true;
+        merlinController.GetComponent<MerlinController>().readyToPlay = true;
         panelInicial.SetActive(false);
         comenzogame = false;
+        istutorial = false;
     }
 }

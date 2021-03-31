@@ -1,0 +1,1584 @@
+fileFormatVersion: 2
+guid: c746dfd5318ba4906bea429ffec1c515
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3985171506946148182
+    second: Sprites Sheet Alquimia prueba 810x200_0
+  - first:
+      213: 5505436046741689283
+    second: Sprites Sheet Alquimia prueba 810x200_1
+  - first:
+      213: 5999711949947218435
+    second: Sprites Sheet Alquimia prueba 810x200_2
+  - first:
+      213: 7262305809260917965
+    second: Sprites Sheet Alquimia prueba 810x200_3
+  - first:
+      213: -5814734862868897164
+    second: Sprites Sheet Alquimia prueba 810x200_4
+  - first:
+      213: 4213306007383053861
+    second: Sprites Sheet Alquimia prueba 810x200_5
+  - first:
+      213: 2893014592378847959
+    second: Sprites Sheet Alquimia prueba 810x200_6
+  - first:
+      213: -4420993473579395965
+    second: Sprites Sheet Alquimia prueba 810x200_7
+  - first:
+      213: -923700738612223636
+    second: Sprites Sheet Alquimia prueba 810x200_8
+  - first:
+      213: 2330319109190669257
+    second: Sprites Sheet Alquimia prueba 810x200_9
+  - first:
+      213: 6473504924121802903
+    second: Sprites Sheet Alquimia prueba 810x200_10
+  - first:
+      213: 5698914808245136298
+    second: Sprites Sheet Alquimia prueba 810x200_11
+  - first:
+      213: -7049125735221673898
+    second: Sprites Sheet Alquimia prueba 810x200_12
+  - first:
+      213: 6355002258914109020
+    second: Sprites Sheet Alquimia prueba 810x200_13
+  - first:
+      213: 7142954316258469650
+    second: Sprites Sheet Alquimia prueba 810x200_14
+  - first:
+      213: -110595437916602993
+    second: Sprites Sheet Alquimia prueba 810x200_15
+  - first:
+      213: -2985888379289014677
+    second: Sprites Sheet Alquimia prueba 810x200_16
+  - first:
+      213: -185457010768006175
+    second: Sprites Sheet Alquimia prueba 810x200_17
+  - first:
+      213: 9117420561533753845
+    second: Sprites Sheet Alquimia prueba 810x200_18
+  - first:
+      213: -819402464366807960
+    second: Sprites Sheet Alquimia prueba 810x200_19
+  - first:
+      213: -6389474985689646096
+    second: Sprites Sheet Alquimia prueba 810x200_20
+  - first:
+      213: 564709833836430682
+    second: Sprites Sheet Alquimia prueba 810x200_21
+  - first:
+      213: 5137578996357648113
+    second: Sprites Sheet Alquimia prueba 810x200_22
+  - first:
+      213: 2540246022277268005
+    second: Sprites Sheet Alquimia prueba 810x200_23
+  - first:
+      213: -8698211561775831257
+    second: Sprites Sheet Alquimia prueba 810x200_24
+  - first:
+      213: -1388459027387384873
+    second: Sprites Sheet Alquimia prueba 810x200_25
+  - first:
+      213: 7740676458223937685
+    second: Sprites Sheet Alquimia prueba 810x200_26
+  - first:
+      213: 9048865567055233916
+    second: Sprites Sheet Alquimia prueba 810x200_27
+  - first:
+      213: 3220867235034615940
+    second: Sprites Sheet Alquimia prueba 810x200_28
+  - first:
+      213: 2562680689024745524
+    second: Sprites Sheet Alquimia prueba 810x200_29
+  - first:
+      213: -5877454008642059533
+    second: Sprites Sheet Alquimia prueba 810x200_30
+  - first:
+      213: -3695770108520329695
+    second: Sprites Sheet Alquimia prueba 810x200_31
+  - first:
+      213: 6528392377388972265
+    second: Sprites Sheet Alquimia prueba 810x200_32
+  - first:
+      213: 3244003877085671700
+    second: Sprites Sheet Alquimia prueba 810x200_33
+  - first:
+      213: 8320463692044626324
+    second: Sprites Sheet Alquimia prueba 810x200_34
+  - first:
+      213: -1610888378630029769
+    second: Sprites Sheet Alquimia prueba 810x200_35
+  - first:
+      213: -2575848162938133817
+    second: Sprites Sheet Alquimia prueba 810x200_36
+  - first:
+      213: 2506367903263337631
+    second: Sprites Sheet Alquimia prueba 810x200_37
+  - first:
+      213: -1823380039022931255
+    second: Sprites Sheet Alquimia prueba 810x200_38
+  - first:
+      213: 386437859154563634
+    second: Sprites Sheet Alquimia prueba 810x200_39
+  - first:
+      213: -2363583817277617974
+    second: Sprites Sheet Alquimia prueba 810x200_40
+  - first:
+      213: 6298426311165089856
+    second: Sprites Sheet Alquimia prueba 810x200_41
+  - first:
+      213: -3913390036430947242
+    second: Sprites Sheet Alquimia prueba 810x200_42
+  - first:
+      213: -527663096432849730
+    second: Sprites Sheet Alquimia prueba 810x200_43
+  - first:
+      213: 5506914081954533152
+    second: Sprites Sheet Alquimia prueba 810x200_44
+  - first:
+      213: 4338209965188814091
+    second: Sprites Sheet Alquimia prueba 810x200_45
+  - first:
+      213: 2664953815061974059
+    second: Sprites Sheet Alquimia prueba 810x200_46
+  - first:
+      213: -1059570538381538084
+    second: Sprites Sheet Alquimia prueba 810x200_47
+  - first:
+      213: 5478634894523153499
+    second: Sprites Sheet Alquimia prueba 810x200_48
+  - first:
+      213: 8078476862649718791
+    second: Sprites Sheet Alquimia prueba 810x200_49
+  - first:
+      213: 700935543424486168
+    second: Sprites Sheet Alquimia prueba 810x200_50
+  - first:
+      213: 8967092559000385757
+    second: Sprites Sheet Alquimia prueba 810x200_51
+  - first:
+      213: 6644754239066867631
+    second: Sprites Sheet Alquimia prueba 810x200_52
+  - first:
+      213: 8338866312398094367
+    second: Sprites Sheet Alquimia prueba 810x200_53
+  - first:
+      213: 1677223386788066419
+    second: Sprites Sheet Alquimia prueba 810x200_54
+  - first:
+      213: -1352462821613947274
+    second: Sprites Sheet Alquimia prueba 810x200_55
+  - first:
+      213: -1595714703485294260
+    second: Sprites Sheet Alquimia prueba 810x200_56
+  - first:
+      213: 8482837825117307801
+    second: Sprites Sheet Alquimia prueba 810x200_57
+  - first:
+      213: -101370011618481807
+    second: Sprites Sheet Alquimia prueba 810x200_58
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65788880f5c2e4730800000000000000
+      internalID: 3985171506946148182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c35bab5aec376c40800000000000000
+      internalID: 5505436046741689283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a254b0b32434350800000000000000
+      internalID: 5999711949947218435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4b04bf7a4e8c460800000000000000
+      internalID: 7262305809260917965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_4
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472ae933379ed4fa0800000000000000
+      internalID: -5814734862868897164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526161c9d7ba87a30800000000000000
+      internalID: 4213306007383053861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d243c4a17d062820800000000000000
+      internalID: 2893014592378847959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_7
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384daf4fbd975a2c0800000000000000
+      internalID: -4420993473579395965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_8
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61a04c721b5e23f0800000000000000
+      internalID: -923700738612223636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_9
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c35d9c12e4f65020800000000000000
+      internalID: 2330319109190669257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_10
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798a50e2e6286d950800000000000000
+      internalID: 6473504924121802903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_11
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab2aaee2dc961f40800000000000000
+      internalID: 5698914808245136298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_12
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6504c0fdd797c2e90800000000000000
+      internalID: -7049125735221673898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_13
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56616d52e0813850800000000000000
+      internalID: 6355002258914109020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_14
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217ed6b0b1fd02360800000000000000
+      internalID: 7142954316258469650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_15
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 151
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8db3310906177ef0800000000000000
+      internalID: -110595437916602993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ee285c65eff86d0800000000000000
+      internalID: -2985888379289014677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_17
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e33110d4df1d6df0800000000000000
+      internalID: -185457010768006175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_18
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9df0ec1b5978e70800000000000000
+      internalID: 9117420561533753845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_19
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864365fccc5e0a4f0800000000000000
+      internalID: -819402464366807960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_20
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb79b87a560457a0800000000000000
+      internalID: -6389474985689646096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_21
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a558df61a9046d700800000000000000
+      internalID: 564709833836430682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_22
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fec76b80e85c4740800000000000000
+      internalID: 5137578996357648113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_23
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5228fe76c44c04320800000000000000
+      internalID: 2540246022277268005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_24
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727e72f6baeb94780800000000000000
+      internalID: -8698211561775831257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_25
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbf367fed33bbce0800000000000000
+      internalID: -1388459027387384873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_26
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598aaa51a386c6b60800000000000000
+      internalID: 7740676458223937685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_27
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7347905a47049d70800000000000000
+      internalID: 9048865567055233916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_28
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480dee47fa1d2bc20800000000000000
+      internalID: 3220867235034615940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_29
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430c21e4288709320800000000000000
+      internalID: 2562680689024745524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_30
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2c13f18b61f6ea0800000000000000
+      internalID: -5877454008642059533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_31
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 101
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e8326daacf5bcc0800000000000000
+      internalID: -3695770108520329695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e833a04742899a50800000000000000
+      internalID: 6528392377388972265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_33
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4117ea7b654050d20800000000000000
+      internalID: 3244003877085671700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_34
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499eadae4a9387370800000000000000
+      internalID: 8320463692044626324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_35
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73eb3f2fd89f4a9e0800000000000000
+      internalID: -1610888378630029769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2eab44ebfb04cd0800000000000000
+      internalID: -2575848162938133817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_37
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ca376245868c220800000000000000
+      internalID: 2506367903263337631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_38
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c21083e38d02b6e0800000000000000
+      internalID: -1823380039022931255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_39
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2329baa7f27ec5500800000000000000
+      internalID: 386437859154563634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_40
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac84e4e7a0dd23fd0800000000000000
+      internalID: -2363583817277617974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_41
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04818f80c51886750800000000000000
+      internalID: 6298426311165089856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_42
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cfaf2fe78d0b9c0800000000000000
+      internalID: -3913390036430947242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_43
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc8900a53d5da8f0800000000000000
+      internalID: -527663096432849730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_44
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f0f7f3e2d7c6c40800000000000000
+      internalID: 5506914081954533152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_45
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0593208afa643c30800000000000000
+      internalID: 4338209965188814091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_46
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c47911061dbf420800000000000000
+      internalID: 2664953815061974059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_47
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 51
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc8c4d8536ab41f0800000000000000
+      internalID: -1059570538381538084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_48
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cbc16d865080c40800000000000000
+      internalID: 5478634894523153499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_49
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708d27ca7e38c1070800000000000000
+      internalID: 8078476862649718791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_50
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b034cb9293ab900800000000000000
+      internalID: 700935543424486168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_51
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd834473c23817c70800000000000000
+      internalID: 8967092559000385757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_52
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa70a5766c8e63c50800000000000000
+      internalID: 6644754239066867631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_53
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10c5fbdaba99b370800000000000000
+      internalID: 8338866312398094367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_54
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374fa72b8c1b64710800000000000000
+      internalID: 1677223386788066419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_55
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67637c9ba361b3de0800000000000000
+      internalID: -1352462821613947274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_56
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4924ef7ee1ead9e0800000000000000
+      internalID: -1595714703485294260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_57
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9934d55de0819b570800000000000000
+      internalID: 8482837825117307801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Sheet Alquimia prueba 810x200_58
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1796a92f28cd79ef0800000000000000
+      internalID: -101370011618481807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

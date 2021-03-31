@@ -8,9 +8,11 @@ public class OpenClosePergamino : MonoBehaviour
     public GameObject objetivos; //Es necesario definir los objetivos de la fase
     public bool pergaminoOpen;
 
+    public MerlinController merlinController;
+    public Iniciar_Game iniciarController;
+
     public GameObject pergaminoFondo;
     public GameObject pergaminocerrado;
-    public GameObject objetivosTiempos;
 
     public bool _YaSePresionoBoton = false;
 
@@ -26,10 +28,15 @@ public class OpenClosePergamino : MonoBehaviour
         if(pergaminoOpen == true)
         {
             PergaminoOpen();
+            merlinController.GetComponent<MerlinController>().readyToPlay = false;
         }
         else
         {
             PergaminoClose();
+            if (iniciarController.GetComponent<Iniciar_Game>().istutorial == false)
+            {
+                merlinController.GetComponent<MerlinController>().readyToPlay = true;
+            }
         }
 
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
@@ -66,26 +73,12 @@ public class OpenClosePergamino : MonoBehaviour
     private void PergaminoClose()
     {
         pergaminoFondo.SetActive(false);
-        objetivos.SetActive(false);
         pergaminocerrado.SetActive(true);
-        objetivosTiempos.transform.position = new Vector3(-8.33f, 0, 0);
-        /*
-        pergaminoFondo.transform.localScale = Vector3.Scale(transform.localScale, new Vector3(0.3f, 1, 1));
-        transform.position = new Vector3(-4.8f, 0, 0);
-        objetivosTiempos.transform.position = new Vector3(0, 1, 0);
-        objetivos.SetActive(false);*/
     }
 
     private void PergaminoOpen()
     {
         pergaminoFondo.SetActive(true);
-        objetivos.SetActive(true);
         pergaminocerrado.SetActive(false);
-        objetivosTiempos.transform.position = new Vector3(-15f, 0, 0);
-        /*
-        pergaminoFondo.transform.localScale = Vector3.Scale(transform.localScale, new Vector3(1, 1, 1));
-        transform.position = new Vector3(4.8f, 0, 0);
-        objetivosTiempos.transform.position = new Vector3(0, 0.5f, 0);
-        objetivos.SetActive(true);*/
     }
 }

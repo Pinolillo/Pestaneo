@@ -8,19 +8,35 @@ public class BarraProgreso : MonoBehaviour
     public Slider slider;
     public Image fill;
 
-    private void Update()
+    public Color32 normalcolor;
+    public Color32 boostColor;
+    public Color32 distractedColor;
+
+    private void Start()
     {
+
     }
 
-    public void setInitialDuration(float duration)
+    public void setInitialProgres(float progres)
     {
-        slider.maxValue = duration;
-        slider.value = duration;
+        slider.value = progres;
     }
 
-    public void setDuration(float duration)
+    public void setProgres(float progres)
     {
-        slider.value = duration;
+        slider.value = progres;
     }
 
+    public void NormalProgres()
+    {
+        fill.color = normalcolor;
+    }
+    public void BoostedProges()
+    {
+        fill.color = boostColor;
+    }
+    public void DistractedProges()
+    {
+        fill.color = distractedColor;
+    }
 }

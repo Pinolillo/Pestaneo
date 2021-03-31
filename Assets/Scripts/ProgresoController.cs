@@ -6,31 +6,72 @@ using UnityEngine.UI;
 public class ProgresoController : MonoBehaviour
 {
 
-    public Text[] numProgreso;
-    public float[] currentProgreso;
-    public GameObject[] barrasProgreso;
+    public float[] ProgresosIniciales; //Es necesario definir los tiempos que tendran los objetivos
+    public float[] ProgresosActuales;
+    public Text[] textoProgesos;
+    public BarraProgreso[] ProgresBar;
 
-    //Controlar script de barras
-    public ProgresBar[] barController;
-    public GameObject[] barControlleObject;
+    public float progreso;
 
     // Start is called before the first frame update
     void Start()
     {
-        barController[0] = barControlleObject[0].GetComponent<ProgresBar>();
-        barController[1] = barControlleObject[1].GetComponent<ProgresBar>();
-        barController[2] = barControlleObject[2].GetComponent<ProgresBar>();
-        barController[3] = barControlleObject[3].GetComponent<ProgresBar>();
-        barController[4] = barControlleObject[4].GetComponent<ProgresBar>();
+        ProgresBar[0].setInitialProgres(ProgresosIniciales[0]);
+        ProgresBar[1].setInitialProgres(ProgresosIniciales[1]);
+        ProgresBar[2].setInitialProgres(ProgresosIniciales[2]);
+        ProgresBar[3].setInitialProgres(ProgresosIniciales[3]);
+        ProgresBar[4].setInitialProgres(ProgresosIniciales[4]);
 
-        numProgreso[0].text = currentProgreso[0].ToString("0");
-        numProgreso[1].text = currentProgreso[1].ToString("0");
-        numProgreso[2].text = currentProgreso[2].ToString("0");
-        numProgreso[3].text = currentProgreso[3].ToString("0");
-        numProgreso[4].text = currentProgreso[4].ToString("0");
+        ProgresosActuales[0] = 0;
+        ProgresosActuales[0] = 0;
+        ProgresosActuales[0] = 0;
+        ProgresosActuales[0] = 0;
+        ProgresosActuales[0] = 0;
+
+        progreso = 1f;
     }
     private void Update()
     {
 
+    }
+
+    public void Progresar1()
+    {
+        //Entra en acción 1
+        textoProgesos[0].text = ProgresosActuales[0].ToString("0");
+        ProgresosActuales[0] += progreso * Time.deltaTime;
+        ProgresBar[0].setProgres(ProgresosActuales[0]);
+    }
+
+    public void Progesar2()
+    {
+        //Entra en acción 2
+        textoProgesos[1].text = ProgresosActuales[1].ToString("0");
+        ProgresosActuales[1] += progreso * Time.deltaTime;
+        ProgresBar[1].setProgres(ProgresosActuales[1]);
+    }
+
+    public void Progesar3()
+    {
+        //Entra en acción 3
+        textoProgesos[2].text = ProgresosActuales[2].ToString("0");
+        ProgresosActuales[2] += progreso * Time.deltaTime;
+        ProgresBar[2].setProgres(ProgresosActuales[2]);
+    }
+
+    public void Progesar4()
+    {
+        //Entra en acción 4
+        textoProgesos[3].text = ProgresosActuales[3].ToString("0");
+        ProgresosActuales[3] += progreso * Time.deltaTime;
+        ProgresBar[3].setProgres(ProgresosActuales[3]);
+    }
+
+    public void Progresar5()
+    {
+        //Entra en acción 5
+        textoProgesos[4].text = ProgresosActuales[4].ToString("0");
+        ProgresosActuales[4] += progreso * Time.deltaTime;
+        ProgresBar[4].setProgres(ProgresosActuales[4]);
     }
 }
