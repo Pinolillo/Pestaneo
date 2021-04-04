@@ -28,15 +28,10 @@ public class OpenClosePergamino : MonoBehaviour
         if(pergaminoOpen == true)
         {
             PergaminoOpen();
-            merlinController.GetComponent<MerlinController>().readyToPlay = false;
         }
         else
         {
             PergaminoClose();
-            if (iniciarController.GetComponent<Iniciar_Game>().istutorial == false)
-            {
-                merlinController.GetComponent<MerlinController>().readyToPlay = true;
-            }
         }
 
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
@@ -61,12 +56,14 @@ public class OpenClosePergamino : MonoBehaviour
             // Segundo click
             pergaminoOpen = true; //Abrir pergamino
             _YaSePresionoBoton = false;
+            merlinController.GetComponent<MerlinController>().readyToPlay = false;
         }
         else
         {
             // primer click     
             pergaminoOpen = false; //Cerrar pergamino
             _YaSePresionoBoton = true;
+            merlinController.GetComponent<MerlinController>().readyToPlay = true;
         }
     }
 

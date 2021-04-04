@@ -32,18 +32,20 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6abd6baf9fa96452fa45b6ffa83d098a, type: 3}
-    totalSpriteSurfaceArea: 395679
+    totalSpriteSurfaceArea: 1064203
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 2632f2909c2a04935af7a8e4e54e3db9, type: 3}
   - {fileID: 21300000, guid: 623311f27264b4c11af26b6a2fca6cfe, type: 3}
   - {fileID: 21300000, guid: ba51c003345954f729affff338f79728, type: 3}
   - {fileID: 21300000, guid: aee072e3f96e042a79fe44de05bdf8dc, type: 3}
   - {fileID: 21300000, guid: 17964b247d6824faf9ac179ad8d93fe9, type: 3}
   - {fileID: 21300000, guid: 443ef24500bcb4f57805feff5d4f40c8, type: 3}
   - {fileID: 21300000, guid: 4c55a2f66b67046b3b9a033b7cecc0bc, type: 3}
+  - {fileID: 21300000, guid: 112fb8d71ffb141859de5386bb80554f, type: 3}
   - {fileID: 21300000, guid: 95db4fe7166834dae95dbaa1716b0723, type: 3}
   - {fileID: 21300000, guid: 22d5c96966d74486ab3b29d1cf4ddfec, type: 3}
   - {fileID: 21300000, guid: 63a83b5ac2fec412cb2af385b1d01b0a, type: 3}
@@ -51,14 +53,18 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2760465b8afc04352973904ee42c52c2, type: 3}
   - {fileID: 21300000, guid: 4116b99b8ed63465395b404de1220eca, type: 3}
   - {fileID: 21300000, guid: 4265805cb242c4f478792f77b0ace157, type: 3}
+  - {fileID: 21300000, guid: cf9a388c2d7a548269c7b6a20b439592, type: 3}
+  - {fileID: 21300000, guid: 3b1b440d41af44ca7bfb9d492e59492b, type: 3}
   - {fileID: 21300000, guid: 5a08adfe9600244ef95d034ff9291316, type: 3}
   m_PackedSpriteNamesToIndex:
+  - rectangulo
   - cronometro_fondo
   - panel_hechizo
   - Siguiente
   - magoicono
   - BotonContinuar
   - PergaminoCerrado
+  - rectangle_desarrollo
   - Verde
   - progreso_fondo
   - Barra
@@ -66,6 +72,8 @@ SpriteAtlas:
   - PergaminoAbierto 1
   - checkgood
   - cronometro_radial
+  - relleno
+  - Mano0001
   - fil-congelado
   m_RenderDataMap: {}
   m_Tag: Atlas_UI

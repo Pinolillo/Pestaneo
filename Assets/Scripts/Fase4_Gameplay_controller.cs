@@ -37,8 +37,7 @@ public class Fase4_Gameplay_controller : MonoBehaviour
     public BarraProgreso barradesarrollo;
 
     //Mecanica de distraccion
-    public bool puedeDistraerse;
-    public bool puedeDistraerse2;
+    public bool[] puedeDistraerse;
     public GameObject distraction;
 
     public bool isboostavailable;
@@ -58,6 +57,9 @@ public class Fase4_Gameplay_controller : MonoBehaviour
 
     public bool inproductivo;
     public Lechuza lechuzaController;
+
+    public Vector3 merlinpos;
+    public Vector3 lechuzapos;
 
     void Start()
     {
@@ -84,16 +86,21 @@ public class Fase4_Gameplay_controller : MonoBehaviour
         isboostavailable = true;
         isboostavailable2 = true;
 
-
         //Merlin se puede distraer al inicio
-        puedeDistraerse = true;
+        puedeDistraerse[0] = true;
+        puedeDistraerse[1] = true;
+        puedeDistraerse[2] = true;
+        puedeDistraerse[3] = true;
+
         distraction.SetActive(false);
-        puedeDistraerse2 = true;
 
         inproductivo = false;
     }
     void Update()
     {
+
+        merlinpos = merlin.transform.position;
+
         //Si merlin se encuentra en el cuarto 1 vamos a sumar los puntos
         Trabajo1();
         Trabajo2();
@@ -113,10 +120,11 @@ public class Fase4_Gameplay_controller : MonoBehaviour
         //Checar cuando haya perdido el juego
         if (tiempoTareasController.perder == true)
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(18);
         }
 
-        //Productividad mover los distintos estados del progreso 
+        //Productividad mover los distintos estados del progreso
+
         if (desarrollo == true)
         {
             boostProductividad.SetActive(true);
@@ -130,27 +138,36 @@ public class Fase4_Gameplay_controller : MonoBehaviour
             progresoController.progreso = 1f;
         }
 
-        
-        if(inproductivo == true)
+        /*--------Distracciones----------*/
+        /*---------------------------------*/
+        /*---------------------------------*/
+
+        //Condiciones al estar distraido el merlin 
+        if (inproductivo == true)
         {
             if(lechuzaController.lechuzaVive == true)
             {
-                progresoController.progreso = 0f;
-                distraction.SetActive(true);
                 merlinController.readyToPlay = false;
-                distraction.transform.position = merlin.transform.position;
+                progresoController.progreso = 0f;
+                distraction.transform.position = lechuzapos;// posicion a la lechuza, aquí poner unos frames a la dercha y arriba
+
             }
-            if(lechuzaController.lechuzaVive == false)
+            else
             {
-                distraction.SetActive(false);
-                progresoController.progreso = 1f;
+                inproductivo = false;
             }
         }
         
-        if(inproductivo == false)
+        else
         {
             distraction.SetActive(false);
+            lechuzaController.lechuzaVive = false;
+            lechuzaController.isnotkilled = false;
         }
+
+        /*---------------------------------*/
+        /*---------------------------------*/
+        /*--------Distracciones----------*/
 
     }
 
@@ -178,8 +195,11 @@ public class Fase4_Gameplay_controller : MonoBehaviour
 
             if (progresoController.ProgresosActuales[0] >= 15)
             {
-                //Iniiciar corrutina de distracción
-                StartCoroutine(Distraccion());
+                if (puedeDistraerse[0] == true)
+                {
+                    //Iniiciar corrutina de distracción
+                    StartCoroutine(Distraccion());
+                }
             }
 
         }
@@ -231,6 +251,16 @@ public class Fase4_Gameplay_controller : MonoBehaviour
         if (merlinController.inRoom2 == true && progresoController.ProgresosActuales[1] <= 20)
         {
             progresoController.Progesar2();
+
+            if (progresoController.ProgresosActuales[1] >= 5)
+            {
+                if (puedeDistraerse[1] == true)
+                {
+                    //Iniiciar corrutina de distracción
+                    StartCoroutine(Distraccion());
+                }
+            }
+
         }
         //Si llega a llevar la tarea 1 a 20
         if (progresoController.ProgresosActuales[1] >= 20)
@@ -279,18 +309,17 @@ public class Fase4_Gameplay_controller : MonoBehaviour
         if (merlinController.inRoom3 == true && progresoController.ProgresosActuales[2] <= 20)
         {
             progresoController.Progesar3();
-
-            if (progresoController.ProgresosActuales[2] >= 5)
-            {
-                    //Iniiciar corrutina de distracción
-                    StartCoroutine(Distraccion());
-            }
-
         }
         //Si llega a llevar la tarea 1 a 20
         if (progresoController.ProgresosActuales[2] >= 20)
         {
             Ganar3();
+
+            if (isboostavailable == true)
+            {
+                StartCoroutine(desarrolloPersonal()); //Se vuelve super rápido
+            }
+
         }
 
         if (merlinController.inRoom3 && desarrollo == true)
@@ -333,16 +362,21 @@ public class Fase4_Gameplay_controller : MonoBehaviour
         if (merlinController.inRoom4 == true && progresoController.ProgresosActuales[3] <= 20)
         {
             progresoController.Progesar4();
+
+            if (progresoController.ProgresosActuales[3] >= 7)
+            {
+                if (puedeDistraerse[2] == true)
+                {
+                    //Iniiciar corrutina de distracción
+                    StartCoroutine(Distraccion());
+                }
+            }
+
         }
         //Si llega a llevar la tarea 1 a 20
         if (progresoController.ProgresosActuales[3] >= 20)
         {
             Ganar4();
-
-            if (isboostavailable == true)
-            {
-                StartCoroutine(desarrolloPersonal()); //Se vuelve super rápido
-            }
         }
 
         if (merlinController.inRoom4 && desarrollo == true)
@@ -385,11 +419,26 @@ public class Fase4_Gameplay_controller : MonoBehaviour
         if (merlinController.inRoom5 == true && progresoController.ProgresosActuales[4] <= 20)
         {
             progresoController.Progresar5();
+
+            if (progresoController.ProgresosActuales[4] >= 10)
+            {
+                if (puedeDistraerse[3] == true)
+                {
+                    //Iniiciar corrutina de distracción
+                    StartCoroutine(Distraccion());
+                }
+            }
+
         }
         //Si llega a llevar la tarea 1 a 20
         if (progresoController.ProgresosActuales[4] >= 20)
         {
             Ganar5();
+
+            if (isboostavailable2 == true)
+            {
+                StartCoroutine(desarrolloPersonal2()); //Se vuelve super rápido
+            }
         }
 
         if (merlinController.inRoom5 && desarrollo == true)
@@ -415,6 +464,9 @@ public class Fase4_Gameplay_controller : MonoBehaviour
     }
 
 
+
+    /*----------Desarrollos personales---------------*/
+
     //Desarrollo peronsal 1
     IEnumerator desarrolloPersonal()
     {
@@ -425,17 +477,58 @@ public class Fase4_Gameplay_controller : MonoBehaviour
         desarrollo = false;
     }
 
+    //Desarrollo peronsal 1
+    IEnumerator desarrolloPersonal2()
+    {
+        isboostavailable2 = false;
+        desarrollo = true;
+
+        yield return new WaitForSeconds(10f);//10 Segundos dura la producividad
+        desarrollo = false;
+    }
+
+    /*----------Distracciones---------------*/
 
     //Distraccion
     IEnumerator Distraccion()
     {
         inproductivo = true;
+        distraction.SetActive(true);
+        lechuzaController.lechuzaVive = true;
+        lechuzaController.isnotkilled = true;
+
+        lechuzapos = merlinpos + Vector3.left * 1 + Vector3.up * 0.6f; //Obviously don't x1 if you really want 1 :)
+
+        if (merlinController.inRoom1 == true)
+        {
+            puedeDistraerse[0] = false;
+        }
+        if (merlinController.inRoom2 == true)
+        {
+            puedeDistraerse[1] = false;
+        }
+        if (merlinController.inRoom4 == true)
+        {
+            puedeDistraerse[2] = false;
+        }
+        if (merlinController.inRoom5 == true)
+        {
+            puedeDistraerse[3] = false;
+        }
+
         yield return new WaitForSeconds(10f);//10 Segundos dura la distraccion
-        //puedeDistraerse = false;
-        inproductivo = false;
-        merlinController.readyToPlay = true;
-        lechuzaController.lechuzaVive = false;
+
+        if(lechuzaController.isnotkilled == true)
+        {
+            inproductivo = false;
+            lechuzaController.isnotkilled = false;
+            progresoController.progreso = 1f;
+            merlinController.readyToPlay = true;
+        }
+
     }
+
+    /*----------Distracciones---------------*/
 
     //Ganar
     public void Ganar1()

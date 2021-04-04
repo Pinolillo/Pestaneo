@@ -32,6 +32,7 @@ public class congelamiento : MonoBehaviour
     public GameObject habitaciones;
     public GameObject flags;
 
+
     private void Start()
     {
         congelamientoPower = 20f;

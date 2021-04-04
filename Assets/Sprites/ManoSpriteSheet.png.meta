@@ -1,0 +1,1128 @@
+fileFormatVersion: 2
+guid: fb582ac9f51a44988bcdf0bed548fb7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3675445748945518695
+    second: ManoSpriteSheet_0
+  - first:
+      213: 4593153358568448260
+    second: ManoSpriteSheet_1
+  - first:
+      213: 7159914525401304526
+    second: ManoSpriteSheet_2
+  - first:
+      213: -1383994114627847160
+    second: ManoSpriteSheet_3
+  - first:
+      213: 2233648241604337994
+    second: ManoSpriteSheet_4
+  - first:
+      213: 2645239562418451208
+    second: ManoSpriteSheet_5
+  - first:
+      213: -5694439707903209759
+    second: ManoSpriteSheet_6
+  - first:
+      213: -8924306291281874916
+    second: ManoSpriteSheet_7
+  - first:
+      213: 3321327505895421731
+    second: ManoSpriteSheet_8
+  - first:
+      213: -2152131438837177305
+    second: ManoSpriteSheet_9
+  - first:
+      213: -5234379979617870269
+    second: ManoSpriteSheet_10
+  - first:
+      213: -3929191829873819174
+    second: ManoSpriteSheet_11
+  - first:
+      213: 1881725287382191890
+    second: ManoSpriteSheet_12
+  - first:
+      213: 350137259422500620
+    second: ManoSpriteSheet_13
+  - first:
+      213: 7991498077926287257
+    second: ManoSpriteSheet_14
+  - first:
+      213: 7584556371564389419
+    second: ManoSpriteSheet_15
+  - first:
+      213: 634035572389844706
+    second: ManoSpriteSheet_16
+  - first:
+      213: 7277950762748945802
+    second: ManoSpriteSheet_17
+  - first:
+      213: -1157788379689159964
+    second: ManoSpriteSheet_18
+  - first:
+      213: 60685192746468494
+    second: ManoSpriteSheet_19
+  - first:
+      213: 5397993805333605426
+    second: ManoSpriteSheet_20
+  - first:
+      213: -8106542827583273713
+    second: ManoSpriteSheet_21
+  - first:
+      213: -252450636988730620
+    second: ManoSpriteSheet_22
+  - first:
+      213: 215961573289878177
+    second: ManoSpriteSheet_23
+  - first:
+      213: -8237986869029190059
+    second: ManoSpriteSheet_24
+  - first:
+      213: -8604578934662148333
+    second: ManoSpriteSheet_25
+  - first:
+      213: 2356507360069497696
+    second: ManoSpriteSheet_26
+  - first:
+      213: 6501651661965296925
+    second: ManoSpriteSheet_27
+  - first:
+      213: -361281065366899662
+    second: ManoSpriteSheet_28
+  - first:
+      213: 666828953376644062
+    second: ManoSpriteSheet_29
+  - first:
+      213: -4991800992345183681
+    second: ManoSpriteSheet_30
+  - first:
+      213: -3795760732976925460
+    second: ManoSpriteSheet_31
+  - first:
+      213: -1515382475168472709
+    second: ManoSpriteSheet_32
+  - first:
+      213: 2435645209993855107
+    second: ManoSpriteSheet_33
+  - first:
+      213: -102846142759434563
+    second: ManoSpriteSheet_34
+  - first:
+      213: 2259263130813582531
+    second: ManoSpriteSheet_35
+  - first:
+      213: 5567549728946643198
+    second: ManoSpriteSheet_36
+  - first:
+      213: 1910040386998855930
+    second: ManoSpriteSheet_37
+  - first:
+      213: -229660548419914715
+    second: ManoSpriteSheet_38
+  - first:
+      213: 5527564478721225239
+    second: ManoSpriteSheet_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ManoSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ff1ee80913efcc0800000000000000
+      internalID: -3675445748945518695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4016d50e4a82ebf30800000000000000
+      internalID: 4593153358568448260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd44b473502d5360800000000000000
+      internalID: 7159914525401304526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c306a7fa01bcce0800000000000000
+      internalID: -1383994114627847160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41a00acd338ffe10800000000000000
+      internalID: 2233648241604337994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803f2cfed57c5b420800000000000000
+      internalID: 2645239562418451208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eecc8f814949f0b0800000000000000
+      internalID: -5694439707903209759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c103c5906be762480800000000000000
+      internalID: -8924306291281874916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32771abf4c9b71e20800000000000000
+      internalID: 3321327505895421731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724e82edbd71222e0800000000000000
+      internalID: -2152131438837177305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ed577342fbb57b0800000000000000
+      internalID: -5234379979617870269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1010639d4b879c0800000000000000
+      internalID: -3929191829873819174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f0947dd2b3d1a10800000000000000
+      internalID: 1881725287382191890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 5200
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07c18a7bffebd400800000000000000
+      internalID: 350137259422500620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997630e392187ee60800000000000000
+      internalID: 7991498077926287257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b246502d5d1c14960800000000000000
+      internalID: 7584556371564389419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6124b6efb8cc800800000000000000
+      internalID: 634035572389844706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a852f6298a9700560800000000000000
+      internalID: 7277950762748945802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e27d875a95beefe0800000000000000
+      internalID: -1157788379689159964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 401
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8487cc7cd897d000800000000000000
+      internalID: 60685192746468494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c2ba224c689ea40800000000000000
+      internalID: 5397993805333605426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f058865af36cf7f80800000000000000
+      internalID: -8106542827583273713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40337f2bb7d1f7cf0800000000000000
+      internalID: -252450636988730620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2e31d18ef3ff200800000000000000
+      internalID: 215961573289878177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556ce2fd69accad80800000000000000
+      internalID: -8237986869029190059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f47a54c05669880800000000000000
+      internalID: -8604578934662148333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063398b65fef3b020800000000000000
+      internalID: 2356507360069497696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1505c44db18a3a50800000000000000
+      internalID: 6501651661965296925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2343bb209c87cfaf0800000000000000
+      internalID: -361281065366899662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbd5fb666d014900800000000000000
+      internalID: 666828953376644062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3aa2d5f17f89bab0800000000000000
+      internalID: -4991800992345183681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4b88269bfb25bc0800000000000000
+      internalID: -3795760732976925460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b712bbceaa748fae0800000000000000
+      internalID: -1515382475168472709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 5200
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380c094f9662dc120800000000000000
+      internalID: 2435645209993855107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db60e426afd929ef0800000000000000
+      internalID: -102846142759434563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccc74ee8d38a5f10800000000000000
+      internalID: 2259263130813582531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0ef27faf8e34d40800000000000000
+      internalID: 5567549728946643198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af867b5bc93d18a10800000000000000
+      internalID: 1910040386998855930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5247280b2f410dcf0800000000000000
+      internalID: -229660548419914715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ManoSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 1
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712fe3b6b9ad5bc40800000000000000
+      internalID: 5527564478721225239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

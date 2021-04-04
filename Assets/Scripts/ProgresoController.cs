@@ -13,6 +13,8 @@ public class ProgresoController : MonoBehaviour
 
     public float progreso;
 
+    public bool sinprogreso;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,14 @@ public class ProgresoController : MonoBehaviour
     }
     private void Update()
     {
-
+        if(progreso == 0)
+        {
+            sinprogreso = true;
+        }
+        else
+        {
+            sinprogreso = false;
+        }
     }
 
     public void Progresar1()

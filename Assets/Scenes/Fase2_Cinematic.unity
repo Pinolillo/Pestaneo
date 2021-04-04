@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdd552b487814aadad6600f4dc31e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToGo: 11
+  sceneToGo: 8
 --- !u!114 &127403770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ae4f208bd994149a682902fa541c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numEscena: 11
+  numEscena: 8
 --- !u!328 &929015797
 VideoPlayer:
   m_ObjectHideFlags: 0

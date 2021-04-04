@@ -32,6 +32,8 @@ public class TiempoTareas : MonoBehaviour
 
     public bool estamosCongelando;
 
+    public GameObject[] checkmarks;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,12 +63,19 @@ public class TiempoTareas : MonoBehaviour
         listo3 = false;
         listo4 = false;
         listo5 = false;
+
+        checkmarks[0].SetActive(false);
+        checkmarks[1].SetActive(false);
+        checkmarks[2].SetActive(false);
+        checkmarks[3].SetActive(false);
+        checkmarks[4].SetActive(false);
     }
 
     public void Tiempo1()
     {
         if (listo1 == false)
         {
+            checkmarks[0].SetActive(false);
             if (congelandoObjetivo1 == false)
             {
                 textoObjetivos[0].text = TimeposActualesObjetivos[0].ToString("0");
@@ -78,12 +87,17 @@ public class TiempoTareas : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            checkmarks[0].SetActive(true);
+        }
     }
 
     public void Tiempo2()
     {
-        if(listo2 == false)
+        if (listo2 == false)
         {
+            checkmarks[1].SetActive(false);
             if (congelandoObjetivo2 == false)
             {
                 textoObjetivos[1].text = TimeposActualesObjetivos[1].ToString("0");
@@ -95,11 +109,17 @@ public class TiempoTareas : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            checkmarks[1].SetActive(true);
+        }
     }
     public void Tiempo3()
     {
-        if(listo3 == false)
+        if (listo3 == false)
         {
+            checkmarks[2].SetActive(false);
+
             if (congelandoObjetivo3 == false)
             {
                 textoObjetivos[2].text = TimeposActualesObjetivos[2].ToString("0");
@@ -111,11 +131,18 @@ public class TiempoTareas : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            checkmarks[2].SetActive(true);
+        }
     }
+
     public void Tiempo4()
     {
-        if(listo4 == false)
+        if (listo4 == false)
         {
+            checkmarks[3].SetActive(false);
+
             if (congelandoObjetivo4 == false)
             {
                 textoObjetivos[3].text = TimeposActualesObjetivos[3].ToString("0");
@@ -127,11 +154,16 @@ public class TiempoTareas : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            checkmarks[3].SetActive(true);
+        }
     }
     public void Tiempo5()
     {
-        if(listo5 == false)
+        if (listo5 == false)
         {
+            checkmarks[4].SetActive(false);
             if (congelandoObjetivo5 == false)
             {
                 textoObjetivos[4].text = TimeposActualesObjetivos[4].ToString("0");
@@ -142,6 +174,10 @@ public class TiempoTareas : MonoBehaviour
                     perder = true;
                 }
             }
+        }
+        else
+        {
+            checkmarks[4].SetActive(true);
         }
     }
 
