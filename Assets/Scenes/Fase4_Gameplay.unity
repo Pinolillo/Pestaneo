@@ -763,8 +763,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: "                    Estudiar hechizo de atenci\xF3n para examen de
-        encantamientos, en el estudio antes de las 8, para desarrollar mis habilidades.
+      value: "                         Estudiar hechizo de atenci\xF3n para examen
+        de encantamientos, en el estudio antes de las 8, para desarrollar mis habilidades.
         Hasta alcanzar un control total del hechizo."
       objectReference: {fileID: 0}
     - target: {fileID: 8181094709564034439, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
@@ -3277,10 +3277,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: "                    Tener una partida de ajedrez m\xE1gica en la sala,
-        antes de las 8, para mejorar mis estrategias, ser m\xE1s creativo y desarrollar
-        mis capacidades cognitivas, adem\xE1s de pasar un rato muy agradable. Hasta
-        terminar dos partidas."
+      value: "                         Tener una partida de ajedrez m\xE1gica en
+        la sala, antes de las 8, para mejorar mis estrategias, ser m\xE1s creativo
+        y desarrollar mis capacidades cognitivas, adem\xE1s de pasar un rato muy
+        agradable. Hasta terminar dos partidas."
       objectReference: {fileID: 0}
     - target: {fileID: 8181094709564034439, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Pivot.x
@@ -3992,9 +3992,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: "                    Limpiar jaula de \u201CGorgeo\u201D y jugar con
-        \xE9l, en el patio, antes de las 8, para que duerma en su jaula limpia y
-        se mantenga saludable. Hasta dejarla reluciente."
+      value: "                         Limpiar jaula de \u201CGorgeo\u201D y jugar
+        con \xE9l, en el patio, antes de las 8, para que duerma en su jaula limpia
+        y se mantenga saludable. Hasta dejarla reluciente."
       objectReference: {fileID: 0}
     - target: {fileID: 8181094709564034439, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Pivot.x
@@ -5479,9 +5479,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: "                    Ordenar mi closet acomodando toda la ropa en su
-        lugar, en el cuarto antes de las 8, para que en la ma\xF1ana siguiente sea
-        m\xE1s eficiente al prepararme, hasta dejar los sombreros todos ordenados. "
+      value: "                         Ordenar mi closet acomodando toda la ropa
+        en su lugar, en el cuarto antes de las 8, para que en la ma\xF1ana siguiente
+        sea m\xE1s eficiente al prepararme, hasta dejar los sombreros todos ordenados. "
       objectReference: {fileID: 0}
     - target: {fileID: 8181094709564034439, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Pivot.x
@@ -6254,6 +6254,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1186927521}
     m_Modifications:
+    - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
+      propertyPath: m_Text
+      value: "                        Preparar una ensalada de nuez con aderezo de
+        moras agridulces en la cocina, antes de las 8 para cenar y recargar energ\xEDas
+        para el siguiente d\xEDa, hasta terminar con la porci\xF3n entera para la
+        cena."
+      objectReference: {fileID: 0}
     - target: {fileID: 8181094709564034439, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Pivot.x
       value: 0

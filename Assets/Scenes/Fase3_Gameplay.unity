@@ -384,8 +384,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: "                    Practicar ejercicio de la clase de pociones en
-        el estudio, antes de las 6, para mejorar mis habilidades con los compuestos
+      value: "                         Practicar ejercicio de la clase de pociones
+        en el estudio, antes de las 6, para mejorar mis habilidades con los compuestos
         qu\xEDmicos y lograr crear nuevas pociones curativas. Hasta lograr componer
         la p\xF3cima. "
       objectReference: {fileID: 0}
@@ -927,7 +927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: "                   Leer el segundo cap\xEDtulo de mi libro \u201CEl
+      value: "                        Leer el segundo cap\xEDtulo de mi libro \u201CEl
         gran mago\u201D en mi cuarto, antes de las 6, para relajarme y disfrutar
         de un momento agradable, adem\xE1s de desarrollar la creatividad. Leer hasta
         terminar con el 3 capitulo."
@@ -4762,10 +4762,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: "                    Tener reuni\xF3n con mi equipo de clase de astronom\xEDa
-        en la sala, antes de las 6,  para discutir sobre el proyecto final, esto
-        me ayudar\xE1 a aprender a trabajar en equipo. Hasta definir tareas para
-        cada miembro. "
+      value: "                         Tener reuni\xF3n con mi equipo de clase de
+        astronom\xEDa en la sala, antes de las 6,  para discutir sobre el proyecto
+        final, esto me ayudar\xE1 a aprender a trabajar en equipo. Hasta definir
+        tareas para cada miembro. "
       objectReference: {fileID: 0}
     - target: {fileID: 8181094709564034439, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Pivot.x

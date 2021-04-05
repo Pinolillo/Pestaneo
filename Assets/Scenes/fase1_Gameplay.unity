@@ -2408,9 +2408,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: "                    Hacer tarea de hechizos en el estudio, antes de
-        las 12, para reforzar mi comprensi\xF3n de la clase hasta tener todos mis
-        apuntes listos."
+      value: "                         Hacer tarea de hechizos en el estudio, antes
+        de las 12, para reforzar mi comprensi\xF3n de la clase hasta tener todos
+        mis apuntes listos."
       objectReference: {fileID: 0}
     - target: {fileID: 8181094709564034439, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Pivot.x
@@ -2616,9 +2616,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659824396034384222, guid: e7af77a2ce850493e83336c89a2382b1, type: 3}
       propertyPath: m_Text
-      value: '                    Limpiar mis morteros en la cocina, antes de las
-        12, para mantener ordenadas y listas mis herramientas de clase, hasta que
-        queden completamente limpios y guardados
+      value: '                         Limpiar mis morteros en la cocina, antes de
+        las 12, para mantener ordenadas y listas mis herramientas de clase, hasta
+        que queden completamente limpios y guardados
 
 '
       objectReference: {fileID: 0}
