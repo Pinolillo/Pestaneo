@@ -828,11 +828,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A merl\xEDn lo distrajo su lechuza, por eso es el progreso de su tarea
-    se deten\xEDa por completo cuando aparec\xEDa la lechuza. En nuestros tiempos
-    los dispositivos electr\xF3nicos nos distraen, ya que los usamos entre actividad
-    y actividad lo cual sumado en un d\xEDa \xA1nos llega a quitar horas!. Pon a
-    merl\xEDn a trabajar en otro objetivo y no lo dejes estar con su lechuza."
+  m_Text: "A merl\xEDn lo distrajo su lechuza, por eso es el progreso de su objetivo
+    se deten\xEDa por completo cuando aparecia la lechuza. En nuestros tiempos los
+    dispositivos electr\xF3nicos nos distraen, ya que los usamos entre actividad
+    y actividad lo cual sumado en un d\xEDa \xA1nos llega a quitar horas. \xA1Manda
+    a volar a la lechuza para que no te distraiga!"
 --- !u!222 &1727086169
 CanvasRenderer:
   m_ObjectHideFlags: 0

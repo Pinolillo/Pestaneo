@@ -340,9 +340,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Lo s\xE9, parece imposible, pero una vez que logras dominar tus tiempos,
-    tus poderes de congelamiento y evitas distracciones (esto lo haces poniendo a
-    trabajar a Merl\xEDn inmediatamente otra tarea al momento que llega una lechuza
-    a distraerlo), dominando esto lograr\xE1s completar este reto."
+    tus poderes de congelamiento y evitas distracciones  lograras cumplir este reto."
 --- !u!222 &486272707
 CanvasRenderer:
   m_ObjectHideFlags: 0
