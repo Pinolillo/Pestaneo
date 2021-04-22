@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Fase4_Gameplay_controller : MonoBehaviour
 {
+
+    public AudioSource lechuzaSound;
+
     // Start is called before the first frame update
     public GameObject merlin;
     public MerlinController merlinController;
@@ -145,6 +148,7 @@ public class Fase4_Gameplay_controller : MonoBehaviour
         //Condiciones al estar distraido el merlin 
         if (inproductivo == true)
         {
+
             if(lechuzaController.lechuzaVive == true)
             {
                 merlinController.readyToPlay = false;
@@ -155,6 +159,7 @@ public class Fase4_Gameplay_controller : MonoBehaviour
             else
             {
                 inproductivo = false;
+                lechuzaSound.Stop();
             }
         }
         
@@ -492,6 +497,7 @@ public class Fase4_Gameplay_controller : MonoBehaviour
     //Distraccion
     IEnumerator Distraccion()
     {
+        lechuzaSound.Play();
         inproductivo = true;
         distraction.SetActive(true);
         lechuzaController.lechuzaVive = true;
@@ -518,7 +524,9 @@ public class Fase4_Gameplay_controller : MonoBehaviour
 
         yield return new WaitForSeconds(10f);//10 Segundos dura la distraccion
 
-        if(lechuzaController.isnotkilled == true)
+        lechuzaSound.Stop();
+
+        if (lechuzaController.isnotkilled == true)
         {
             inproductivo = false;
             lechuzaController.isnotkilled = false;

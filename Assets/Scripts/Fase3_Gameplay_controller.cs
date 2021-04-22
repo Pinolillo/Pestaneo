@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Fase3_Gameplay_controller : MonoBehaviour
 {
+
+    public AudioSource lechuzaSound;
+
     // Start is called before the first frame update
     public GameObject merlin;
     public MerlinController merlinController;
@@ -147,6 +150,7 @@ public class Fase3_Gameplay_controller : MonoBehaviour
             else
             {
                 inproductivo = false;
+                lechuzaSound.Stop();
             }
         }
 
@@ -350,6 +354,9 @@ public class Fase3_Gameplay_controller : MonoBehaviour
     //Distraccion
     IEnumerator Distraccion()
     {
+        lechuzaSound.Play();
+
+
         inproductivo = true;
         distraction.SetActive(true);
         lechuzaController.lechuzaVive = true;
@@ -370,6 +377,7 @@ public class Fase3_Gameplay_controller : MonoBehaviour
 
         if (lechuzaController.isnotkilled == true)
         {
+            lechuzaSound.Stop();
             inproductivo = false;
             lechuzaController.isnotkilled = false;
             progresoController.progreso = 1f;

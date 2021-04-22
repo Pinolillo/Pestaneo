@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class congelamiento : MonoBehaviour
 {
+    public AudioSource select;
+    public AudioSource audioCongelado;
+    public AudioSource soundReturn;
+
+    public bool taped;
+
     public bool selected;
     public GameObject bola;
 
@@ -38,6 +44,7 @@ public class congelamiento : MonoBehaviour
         congelamientoPower = 20f;
 
         activated = false;
+        taped = false;
 
         textos.SetActive(false);
         flags.SetActive(false);
@@ -59,7 +66,6 @@ public class congelamiento : MonoBehaviour
             habitaciones.SetActive(true);
         }
 
-
         if(activated == false)
         {
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
@@ -72,6 +78,7 @@ public class congelamiento : MonoBehaviour
                     if (selected == false)
                     {
                         selected = true;
+                        select.Play();
                         Debug.Log("Tocamos el hechizo");
                     }
                     else
@@ -151,8 +158,11 @@ public class congelamiento : MonoBehaviour
     {
         activated = true;
         textos.SetActive(true);
+        audioCongelado.Play();
 
         yield return new WaitForSeconds(congelamientoPower);
+
+        soundReturn.Play();
 
         bola.transform.position = suSlot.transform.position;
         activated = false;

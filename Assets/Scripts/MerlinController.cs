@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MerlinController : MonoBehaviour
 {
+    public AudioSource travelingsound;
 
     public GameObject merlin;
 
@@ -259,6 +260,8 @@ public class MerlinController : MonoBehaviour
     {
         Moving();
         traveling = true;
+        //Estamos viajando
+        travelingsound.Play();
         yield return new WaitForSeconds(0.65f);//x Segundos dura la distraccion
         Trabajo();
         traveling = false;
